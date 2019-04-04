@@ -6,8 +6,7 @@ For the reaction `A + A -> 0`.
 
 Run the included Python scripts
 ```
-python create_data_dirs_stoch_sim.py
-python create_data_dirs_ic.py
+python create_data_dirs.py
 ```
 
 ## Running

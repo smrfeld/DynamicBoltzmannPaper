@@ -53,10 +53,10 @@ int main() {
 	double dt = 0.01;
 
 	// Number of steps to run
-	int n_steps = 101;
+	int n_steps = 201;
 
 	// no sampling steps for CD
-	int n_sampling_cd = 1000;
+	int n_sampling_cd = 100;
 
 	/********************
 	IC
