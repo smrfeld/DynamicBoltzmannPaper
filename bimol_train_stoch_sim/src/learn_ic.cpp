@@ -141,7 +141,7 @@ int main() {
     // MARK: - Solve
     // ***************
     
-	for (int iIC=4; iIC<=4; iIC++)
+	for (int iIC=21; iIC<=25; iIC++)
 	{
 
         // ***************
@@ -162,7 +162,7 @@ int main() {
         // ***************
 
 		FNameColl fnames;
-		for (auto i_batch=1; i_batch<=100; i_batch++) {
+		for (auto i_batch=1; i_batch<=50; i_batch++) {
 			// Add
             fnames.add_fname(FName("../data/ic_v" + pad_str(iIC,3) + "/lattice_v" + pad_str(i_batch,3) + "/lattice/0000.txt", true));
 		};
