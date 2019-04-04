@@ -10,27 +10,29 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     73045,       1623]
-NotebookOptionsPosition[     70301,       1572]
-NotebookOutlinePosition[     70655,       1588]
-CellTagsIndexPosition[     70612,       1585]
+NotebookDataLength[    102931,       2120]
+NotebookOptionsPosition[    100016,       2066]
+NotebookOutlinePosition[    100369,       2082]
+CellTagsIndexPosition[    100326,       2079]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell["Read visible", "Subchapter",
- CellChangeTimes->{{3.7474159718110533`*^9, 
-  3.747415973738055*^9}},ExpressionUUID->"7062184a-07a0-473a-986d-\
-96642276eaeb"],
+Cell["Initial conditions", "Title",ExpressionUUID->"c4622565-4f0c-457a-82e6-a34fa3670010"],
+
+Cell[CellGroupData[{
+
+Cell["Visible", "Subchapter",ExpressionUUID->"7062184a-07a0-473a-986d-96642276eaeb"],
 
 Cell[BoxData[
  RowBox[{
   RowBox[{"SetDirectory", "[", 
    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}]], "Input",
  CellChangeTimes->{{3.747407556462977*^9, 3.747407565986784*^9}},
- CellLabel->"In[10]:=",ExpressionUUID->"b13c46bb-36a7-4662-b6b2-ce2580346b00"],
+ CellLabel->
+  "In[468]:=",ExpressionUUID->"b13c46bb-36a7-4662-b6b2-ce2580346b00"],
 
 Cell[BoxData[{
  RowBox[{
@@ -53,7 +55,8 @@ Cell[BoxData[{
        RowBox[{"[", "2", "]"}], "]"}]}], "]"}], "\[IndentingNewLine]", ",", 
     RowBox[{"{", 
      RowBox[{"i", ",", "1", ",", "50"}], "}"}]}], "]"}], ";"}]}], "Input",
- CellLabel->"In[11]:=",ExpressionUUID->"45b5ba80-64eb-4acd-b426-8a09b3e784a9"],
+ CellLabel->
+  "In[469]:=",ExpressionUUID->"45b5ba80-64eb-4acd-b426-8a09b3e784a9"],
 
 Cell[BoxData[
  RowBox[{"(*", "\[IndentingNewLine]", 
@@ -78,7 +81,8 @@ Cell[BoxData[
  CellChangeTimes->{{3.747415989083005*^9, 3.747415992593768*^9}, {
   3.7474170440817213`*^9, 3.7474170539647427`*^9}, {3.7475159056066217`*^9, 
   3.74751592978728*^9}, {3.747668169816636*^9, 3.747668174249339*^9}},
- CellLabel->"In[24]:=",ExpressionUUID->"3d990f12-31d3-4ef5-9bc6-86e89cfa167c"],
+ CellLabel->
+  "In[471]:=",ExpressionUUID->"3d990f12-31d3-4ef5-9bc6-86e89cfa167c"],
 
 Cell[BoxData[
  RowBox[{
@@ -94,7 +98,8 @@ Cell[BoxData[
      RowBox[{"{", 
       RowBox[{
        RowBox[{"-", "1.2"}], ",", "1.2"}], "}"}]}], "}"}]}], ";"}]], "Input",
- CellLabel->"In[13]:=",ExpressionUUID->"47c3b1fd-c88b-41a8-8583-5d17534012f8"],
+ CellLabel->
+  "In[472]:=",ExpressionUUID->"47c3b1fd-c88b-41a8-8583-5d17534012f8"],
 
 Cell[BoxData[{
  RowBox[{
@@ -137,7 +142,8 @@ Cell[BoxData[{
   3.747668151252708*^9, 3.74766816782937*^9}, {3.7476682095941772`*^9, 
   3.7476682097750998`*^9}, {3.7476685280382233`*^9, 3.747668528174407*^9}, {
   3.748634955860654*^9, 3.748634956833075*^9}},
- CellLabel->"In[14]:=",ExpressionUUID->"87e85309-fe94-4617-8864-ec06cbaea064"],
+ CellLabel->
+  "In[473]:=",ExpressionUUID->"87e85309-fe94-4617-8864-ec06cbaea064"],
 
 Cell[BoxData[{
  RowBox[{
@@ -242,7 +248,8 @@ Cell[BoxData[{
    3.747515827038144*^9, 3.747515829330802*^9}, {3.747515883875074*^9, 
    3.7475159028026943`*^9}, 3.74751593288831*^9, {3.747516138280311*^9, 
    3.7475161410626307`*^9}, {3.747668177318902*^9, 3.747668178662878*^9}},
- CellLabel->"In[16]:=",ExpressionUUID->"bbb9c4e1-28bc-4f66-9d56-128fb5d7ffa8"],
+ CellLabel->
+  "In[475]:=",ExpressionUUID->"bbb9c4e1-28bc-4f66-9d56-128fb5d7ffa8"],
 
 Cell[CellGroupData[{
 
@@ -268,7 +275,8 @@ Cell[BoxData[
  CellChangeTimes->{{3.747417239810041*^9, 3.747417242956558*^9}, {
   3.747417924330489*^9, 3.747417927634982*^9}, {3.747515820223407*^9, 
   3.747515850323824*^9}, {3.747515941477565*^9, 3.747515964041049*^9}},
- CellLabel->"In[20]:=",ExpressionUUID->"9819a925-69a8-4ad6-9f0d-06e247241906"],
+ CellLabel->
+  "In[479]:=",ExpressionUUID->"9819a925-69a8-4ad6-9f0d-06e247241906"],
 
 Cell[BoxData[
  Graphics3DBox[{Raster3DBox[CompressedData["
@@ -442,283 +450,274 @@ kiRJkiRJkn8e4JVAzg==
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {
-        0, 0, 0.048}}, {-0.441407, -0.729443, 0.245057}}],
-     Ellipsoid[{-0.441407, -0.729443, 0.245057}, {0.064, 0.048, 0.048}]], 
+        0, 0, 0.048}}, {-0.76478, -0.221672, 0.311758}}],
+     Ellipsoid[{-0.76478, -0.221672, 0.311758}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
-       0.677389, 0.87599, 0.771123}}],
-     Ellipsoid[{0.677389, 0.87599, 0.771123}, {0.064, 0.048, 0.048}]], 
+       0.510741, 0.120017, 0.768272}}],
+     Ellipsoid[{0.510741, 0.120017, 0.768272}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
-       0.263218, -0.102725, -0.49954}}],
-     Ellipsoid[{0.263218, -0.102725, -0.49954}, {0.064, 0.048, 0.048}]], 
+       0.026923, 0.436516, -0.423885}}],
+     Ellipsoid[{0.026923, 0.436516, -0.423885}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
-       0.238139, 0.396889, 0.505595}}],
-     Ellipsoid[{0.238139, 0.396889, 0.505595}, {0.064, 0.048, 0.048}]], 
+       0.480398, 0.343095, -0.475349}}],
+     Ellipsoid[{0.480398, 0.343095, -0.475349}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {
-        0, 0, 0.048}}, {-0.460339, -0.914039, -0.250059}}],
-     Ellipsoid[{-0.460339, -0.914039, -0.250059}, {0.064, 0.048, 0.048}]], 
+        0, 0, 0.048}}, {-0.767787, -0.256755, 0.470585}}],
+     Ellipsoid[{-0.767787, -0.256755, 0.470585}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 
+       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.439626, 
+       0.845118, 0.286878}}],
+     Ellipsoid[{-0.439626, 0.845118, 0.286878}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {
-        0, 0, 0.048}}, {-0.741266, -0.464517, 0.857805}}],
-     Ellipsoid[{-0.741266, -0.464517, 0.857805}, {0.064, 0.048, 0.048}]], 
+        0, 0, 0.048}}, {-0.984542, -0.51646, -0.858484}}],
+     Ellipsoid[{-0.984542, -0.51646, -0.858484}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
+       0.461127, 0.894277, 0.906236}}],
+     Ellipsoid[{0.461127, 0.894277, 0.906236}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 
+       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.889796, 
+       0.101453, -0.934781}}],
+     Ellipsoid[{-0.889796, 0.101453, -0.934781}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
+       0.400071, -0.96704, 0.937984}}],
+     Ellipsoid[{0.400071, -0.96704, 0.937984}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
+       0.536386, -0.73182, -0.283688}}],
+     Ellipsoid[{0.536386, -0.73182, -0.283688}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 
+       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.151856, 
+       0.778921, 0.836328}}],
+     Ellipsoid[{-0.151856, 0.778921, 0.836328}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {
-        0, 0, 0.048}}, {-0.864422, -0.333181, 0.231597}}],
-     Ellipsoid[{-0.864422, -0.333181, 0.231597}, {0.064, 0.048, 0.048}]], 
+        0, 0, 0.048}}, {-0.383585, -0.194156, 0.272844}}],
+     Ellipsoid[{-0.383585, -0.194156, 0.272844}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
-       0.458283, 0.361839, -0.564698}}],
-     Ellipsoid[{0.458283, 0.361839, -0.564698}, {0.064, 0.048, 0.048}]], 
+       0.19253, -0.713758, -0.384061}}],
+     Ellipsoid[{0.19253, -0.713758, -0.384061}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
+       0.717181, -0.481546, 0.359185}}],
+     Ellipsoid[{0.717181, -0.481546, 0.359185}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
+       0.187766, 0.0788283, 0.204303}}],
+     Ellipsoid[{0.187766, 0.0788283, 0.204303}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 
+       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.525356, 
+       0.0942865, 0.687843}}],
+     Ellipsoid[{-0.525356, 0.0942865, 0.687843}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {
-        0, 0, 0.048}}, {-0.881794, -0.318504, 0.900709}}],
-     Ellipsoid[{-0.881794, -0.318504, 0.900709}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
-       0.214416, -0.308446, -0.0536752}}],
-     Ellipsoid[{0.214416, -0.308446, -0.0536752}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 
-       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.119812, 
-       0.314674, 0.718905}}],
-     Ellipsoid[{-0.119812, 0.314674, 0.718905}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
-       0.628068, -0.0539879, 0.624562}}],
-     Ellipsoid[{0.628068, -0.0539879, 0.624562}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 
-       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.993123, 
-       0.588102, 0.222278}}],
-     Ellipsoid[{-0.993123, 0.588102, 0.222278}, {0.064, 0.048, 0.048}]], 
+        0, 0, 0.048}}, {-0.38384, -0.444586, 0.58212}}],
+     Ellipsoid[{-0.38384, -0.444586, 0.58212}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {
-        0, 0, 0.048}}, {-0.171393, -0.599915, -0.77016}}],
-     Ellipsoid[{-0.171393, -0.599915, -0.77016}, {0.064, 0.048, 0.048}]], 
+        0, 0, 0.048}}, {-0.477605, -0.334383, -0.316427}}],
+     Ellipsoid[{-0.477605, -0.334383, -0.316427}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {
-        0, 0, 0.048}}, {-0.0774876, -0.334541, -0.622418}}],
-     Ellipsoid[{-0.0774876, -0.334541, -0.622418}, {0.064, 0.048, 0.048}]], 
+        0, 0, 0.048}}, {-0.412386, -0.934311, -0.283468}}],
+     Ellipsoid[{-0.412386, -0.934311, -0.283468}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
-       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.983008, 
-       0.592338, -0.574432}}],
-     Ellipsoid[{-0.983008, 0.592338, -0.574432}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 
-       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.474779, 
-       0.392724, 0.505562}}],
-     Ellipsoid[{-0.474779, 0.392724, 0.505562}, {0.064, 0.048, 0.048}]], 
+       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.474402, 
+       0.602075, -0.0152877}}],
+     Ellipsoid[{-0.474402, 0.602075, -0.0152877}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
-       0.988747, -0.122022, -0.819899}}],
-     Ellipsoid[{0.988747, -0.122022, -0.819899}, {0.064, 0.048, 0.048}]], 
+       0.241909, -0.549782, -0.236367}}],
+     Ellipsoid[{0.241909, -0.549782, -0.236367}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
-      SphereBox[{0, 0, 
-       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.0413528, 
-       0.984107, -0.117239}}],
-     Ellipsoid[{-0.0413528, 0.984107, -0.117239}, {0.064, 0.048, 0.048}]], 
+      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
+       0.0782378, 0.0666334, 0.569477}}],
+     Ellipsoid[{0.0782378, 0.0666334, 0.569477}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {
-        0, 0, 0.048}}, {-0.429046, -0.978331, -0.801002}}],
-     Ellipsoid[{-0.429046, -0.978331, -0.801002}, {0.064, 0.048, 0.048}]], 
+        0, 0, 0.048}}, {-0.648918, -0.740837, 0.855719}}],
+     Ellipsoid[{-0.648918, -0.740837, 0.855719}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
-       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.444048, 
-       0.883601, 0.678039}}],
-     Ellipsoid[{-0.444048, 0.883601, 0.678039}, {0.064, 0.048, 0.048}]], 
+       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.0329786, 
+       0.976344, -0.625827}}],
+     Ellipsoid[{-0.0329786, 0.976344, -0.625827}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
-       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.194438, 
-       0.0814916, -0.370705}}],
-     Ellipsoid[{-0.194438, 0.0814916, -0.370705}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 
-       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.441593, 
-       0.14411, 0.055601}}],
-     Ellipsoid[{-0.441593, 0.14411, 0.055601}, {0.064, 0.048, 0.048}]], 
+       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.673794, 
+       0.164111, 0.453002}}],
+     Ellipsoid[{-0.673794, 0.164111, 0.453002}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
-       0.4857, -0.84411, -0.95381}}],
-     Ellipsoid[{0.4857, -0.84411, -0.95381}, {0.064, 0.048, 0.048}]], 
+       0.530509, 0.638755, -0.452712}}],
+     Ellipsoid[{0.530509, 0.638755, -0.452712}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
-      SphereBox[{0, 0, 
-       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.6767, 
-       0.702168, -0.661175}}],
-     Ellipsoid[{-0.6767, 0.702168, -0.661175}, {0.064, 0.048, 0.048}]], 
+      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
+       0.218351, -0.745086, 0.102702}}],
+     Ellipsoid[{0.218351, -0.745086, 0.102702}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {
-        0, 0, 0.048}}, {-0.372879, -0.98241, 0.629688}}],
-     Ellipsoid[{-0.372879, -0.98241, 0.629688}, {0.064, 0.048, 0.048}]], 
+        0, 0, 0.048}}, {-0.199529, -0.222691, 0.768319}}],
+     Ellipsoid[{-0.199529, -0.222691, 0.768319}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
+       0.484044, 0.364923, 0.834008}}],
+     Ellipsoid[{0.484044, 0.364923, 0.834008}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
-       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.834987, 
-       0.373358, -0.978484}}],
-     Ellipsoid[{-0.834987, 0.373358, -0.978484}, {0.064, 0.048, 0.048}]], 
+       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.799424, 
+       0.890521, 0.436083}}],
+     Ellipsoid[{-0.799424, 0.890521, 0.436083}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
-       0.618613, -0.97895, 0.786452}}],
-     Ellipsoid[{0.618613, -0.97895, 0.786452}, {0.064, 0.048, 0.048}]], 
+       0.185288, 0.13243, 0.886301}}],
+     Ellipsoid[{0.185288, 0.13243, 0.886301}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
+       0.948922, -0.789332, -0.0470658}}],
+     Ellipsoid[{0.948922, -0.789332, -0.0470658}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
+       0.518399, -0.43825, 0.212097}}],
+     Ellipsoid[{0.518399, -0.43825, 0.212097}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
+       0.374118, 0.528771, 0.188442}}],
+     Ellipsoid[{0.374118, 0.528771, 0.188442}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
+       0.748291, 0.854977, -0.647447}}],
+     Ellipsoid[{0.748291, 0.854977, -0.647447}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
+       0.201293, 0.385486, 0.991307}}],
+     Ellipsoid[{0.201293, 0.385486, 0.991307}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
+       0.748581, -0.396163, -0.753778}}],
+     Ellipsoid[{0.748581, -0.396163, -0.753778}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
-       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.105056, 
-       0.316318, 0.361922}}],
-     Ellipsoid[{-0.105056, 0.316318, 0.361922}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
-       0.83115, -0.854203, -0.59808}}],
-     Ellipsoid[{0.83115, -0.854203, -0.59808}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
-       0.0690377, 0.316743, -0.499646}}],
-     Ellipsoid[{0.0690377, 0.316743, -0.499646}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
-       0.447716, 0.760171, 0.187247}}],
-     Ellipsoid[{0.447716, 0.760171, 0.187247}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 
-       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.933719, 
-       0.990593, 0.894803}}],
-     Ellipsoid[{-0.933719, 0.990593, 0.894803}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
-       0.955971, -0.988066, -0.422365}}],
-     Ellipsoid[{0.955971, -0.988066, -0.422365}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 
-       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.68884, 
-       0.663556, 0.386992}}],
-     Ellipsoid[{-0.68884, 0.663556, 0.386992}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
-       0.177984, -0.630742, -0.876024}}],
-     Ellipsoid[{0.177984, -0.630742, -0.876024}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
-       0.664377, 0.179199, -0.197954}}],
-     Ellipsoid[{0.664377, 0.179199, -0.197954}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
-       0.982824, 0.326561, 0.51492}}],
-     Ellipsoid[{0.982824, 0.326561, 0.51492}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
-       0.260326, -0.693959, 0.622879}}],
-     Ellipsoid[{0.260326, -0.693959, 0.622879}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
-       0.720861, -0.496579, 0.000432779}}],
-     Ellipsoid[{0.720861, -0.496579, 0.000432779}, {0.064, 0.048, 0.048}]], 
+       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.148717, 
+       0.404309, 0.0235312}}],
+     Ellipsoid[{-0.148717, 0.404309, 0.0235312}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {
-        0, 0, 0.048}}, {-0.72629, -0.752767, 0.252368}}],
-     Ellipsoid[{-0.72629, -0.752767, 0.252368}, {0.064, 0.048, 0.048}]], 
+        0, 0, 0.048}}, {-0.380398, -0.111648, -0.611546}}],
+     Ellipsoid[{-0.380398, -0.111648, -0.611546}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
-       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.447142, 
-       0.878942, 0.383386}}],
-     Ellipsoid[{-0.447142, 0.878942, 0.383386}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 
-       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {
-        0, 0, 0.048}}, {-0.439359, -0.315113, -0.109862}}],
-     Ellipsoid[{-0.439359, -0.315113, -0.109862}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 
-       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.442906, 
-       0.0782879, -0.215046}}],
-     Ellipsoid[{-0.442906, 0.0782879, -0.215046}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 
-       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {
-        0, 0, 0.048}}, {-0.271803, -0.199057, 0.441686}}],
-     Ellipsoid[{-0.271803, -0.199057, 0.441686}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 
-       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.585817, 
-       0.170321, 0.578792}}],
-     Ellipsoid[{-0.585817, 0.170321, 0.578792}, {0.064, 0.048, 0.048}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 
-       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {
-        0, 0, 0.048}}, {-0.245423, -0.827084, -0.797629}}],
-     Ellipsoid[{-0.245423, -0.827084, -0.797629}, {0.064, 0.048, 0.048}]], 
+       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.54639, 
+       0.0889286, -0.721025}}],
+     Ellipsoid[{-0.54639, 0.0889286, -0.721025}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
-       0.257277, 0.0572215, -0.278347}}],
-     Ellipsoid[{0.257277, 0.0572215, -0.278347}, {0.064, 0.048, 0.048}]], 
+       0.889693, -0.725783, 0.411405}}],
+     Ellipsoid[{0.889693, -0.725783, 0.411405}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
+       0.775994, -0.776861, 0.622073}}],
+     Ellipsoid[{0.775994, -0.776861, 0.622073}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
-       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {
-        0, 0, 0.048}}, {-0.184465, -0.298043, 0.789997}}],
-     Ellipsoid[{-0.184465, -0.298043, 0.789997}, {0.064, 0.048, 0.048}]], 
+       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.271072, 
+       0.741538, -0.816177}}],
+     Ellipsoid[{-0.271072, 0.741538, -0.816177}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
+       0.941025, 0.115656, 0.712595}}],
+     Ellipsoid[{0.941025, 0.115656, 0.712595}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
+       0.129467, -0.136053, 0.567572}}],
+     Ellipsoid[{0.129467, -0.136053, 0.567572}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
+       0.48202, -0.93476, -0.0469419}}],
+     Ellipsoid[{0.48202, -0.93476, -0.0469419}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
+       0.473327, 0.813821, 0.556895}}],
+     Ellipsoid[{0.473327, 0.813821, 0.556895}, {0.064, 0.048, 0.048}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {
+       0.719549, -0.334896, -0.0387961}}],
+     Ellipsoid[{0.719549, -0.334896, -0.0387961}, {0.064, 0.048, 0.048}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
-       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.525224, 
-       0.562267, 0.0206179}}],
-     Ellipsoid[{-0.525224, 0.562267, 0.0206179}, {0.064, 0.048, 0.048}]]}},
+       0}], {{{0.064, 0, 0}, {0, 0.048, 0}, {0, 0, 0.048}}, {-0.25692, 
+       0.284707, 0.849556}}],
+     Ellipsoid[{-0.25692, 0.284707, 0.849556}, {0.064, 0.048, 0.048}]]}},
   Axes->True,
   AxesLabel->{
     FormBox["\"b\"", TraditionalForm], 
@@ -743,24 +742,528 @@ kiRJkiRJkn8e4JVAzg==
       FormBox[
        RowBox[{"-", "1"}], TraditionalForm]}, {0, 
       FormBox["0", TraditionalForm]}, {1, 
-      FormBox["1", TraditionalForm]}}}]], "Output",
- CellLabel->"Out[20]=",ExpressionUUID->"0de173ee-22a7-4874-a4bf-0e6dd84487f3"]
+      FormBox["1", TraditionalForm]}}},
+  ViewPoint->{1.2463539072975538`, -2.597487721972828, 1.7747279994310476`},
+  ViewVertical->{0.03134437780589754, -0.07389132197589121, 
+   0.9967735964182721}]], "Output",
+ CellLabel->"Out[479]=",ImageCache->GraphicsData["CompressedBitmap", "\<\
+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
+j+xub5VNKoLaTbv3leLXqHxueUbOvr+mtBmaKQOmTFd1HE6NRX9AmvRS7L/p
+Zi15X9S6WmuIQVpDjMuSQpPmyQOT58gIHe3HH36Il5DA18dffCVpV+g992qp
+XLtLuKLvon4z5L2vv7cq0FJ/Dnv+O2JOC4UDbCMwC4Q2g0uA5HOW8HiNK0IJ
+HxMboYs8wwqGexMEjMRUwKWT4Iw1SNEBKQaexuWGM1zjkN3OTWG0r7/7QQpd
+pVK4XP/8u5IE97wi6VW7Sek6/aT/gtdyHbVwGAiyNBCkPagJSn0t1vqooCdE
+dW7p+Quk05q1MpJO4XffxYKmI9W8tyYyN2tIra1FV3cNqaOnS8nxc2Tk+g9M
+0FgJ6RqlwckFrWzErTDCN7GQTI0+FlsMbBeUnf+EJJVoM2bMi1sQNt0DfuyQ
+dkXp+zxZgygIUg2gWC4aFI3mzt3WTuAEKyZCc621CBPhxI5boyJqN2Cg5Lvy
+agmuvEmCh9VW63ZSex2uYpkiFw9fKDlHj6a6y7ds3ya3tawtKc2e1LK0lRZa
+gyVYOEn+uWSmLH/rtTAcKR6aoKF66tJFklJZldNaBT1SBT1rhpw2d46Mfz8W
+tBUP5MUm6PQ/CRo7ihWfHioeDtlGwAEj7kwtE7cdogOeqiJN3KQTBuDIhh+w
+nh6hPvF+Qzi3k8GJu5CHHZYygRGQROj3sQNQT5B2eSc9SJ698lXJuE0Ffccd
+ke111Ux42EQJ1PZOHz9bPvh6swkbdFz85iq5Z3YHKd7vFSk2vYf886NXZf3W
+n+JTPjVsGXL/tO03qdihrhToWEMKju+uKed4qfPh22GgNklDgXVKk0sawVAI
+KJjbJmU754kQCpSQxtkmLtaLYtWccKRSMVrYtEB6hXJ+iI7UC62cZUMPJsjY
+wUdaAj7biiLbWo18wWmqE7+bgo2pnG158NYd2+X2ulqoPKbybUm6rPKdOkmC
+ObPl0kWLNXbZoqTCYdOWhU7bduyWzeq6i9eskre/+VAOnlDI1/9AWmIzi3zs
+mLRwqfvObdJl0QTpu36pvP3b91qVH7cJNQpx6o7c3mkQwY4J2G0xyQjxgYiJ
+3dqLA3B6fysiOTWSZ15w165dJl2CHvuzyRnIMS0FZ03aQ0mkq3wYViBVm07A
+ci31MKygYYT0nVS9pTslI/NdsURKVLtfUtrUkGCUQu3MEXLa4kwZsukjsYUn
+FHtZS5bIbc+8LEVvfFbOqtxc+kx7VfZlH4r3XtgebOUw94hTTSuOqkpU9PES
+Iugh7yW5NnkWyWOwtqIOw2VdBckejs/mRHe4tomTXiHAyC36YH9FK5DLx6Tf
+yMjWrWrZWckZpkkUsZFbW1zjiRgmezWtYvHEFy3YKBva6oLX1sq9g4dImVEt
+pfysfjL407fl8PFo2UnY29/8nRS+8lbJd21lReKGErzYXYo0HCovjF3E/oXw
+Om9vUWCn2XqHXsVSKvwnACXykFLZ0ZtYlr1Oxu/OUZLwvUtq4zYKTJNGuNf4
+hNcC2zyT6crKzgW5nv4YBx6AUYyBTN0xgeF417iIGSKqFr9MIPPnaLxytWi0
+BrF7Lwn+pVnA4+rSDdXeOo+UoG+mnD14JjlRyCPPZtEsx8uaRCgIQApa5SeX
+COpiBhO7sbNWbMFaQad2O/0Trln0BeLhNdgcq1kxCXe6c9gCdAfrVXYMIiTg
+yp0MFbrhre7R23fukluef0GCOzU81nlFgm69JRgxMVxlcMa0BfL+z7+Gj7Vd
+UG711BWORyinmUYPOLlvGI/8AMnwaUd4OT5tyY+t0qAKtJMqYBFcYWkJm7vM
+eW1HC8mgbSizdzmheFVy1IovETaFWdj9xeYf5KYXlNXKFaP1pIM1N84cL8Hc
+mXLFsqVMLYRUYh+0CtxqImMVJOakFVIxYzV5zmvpAeyasaM2d2yVv2qDsVAJ
+9TSydBE7rmrBBNvw57NJHoazq1qiKaho5pZ5vZa9+6tGG0jpO2rKNdXaS8qd
+d0v+ls9rhG8r+bOGyhmLpsjwLz6OW0XGrtt4b+xiT3gr3dRTs5vqsUtEgV2i
+CVqPdyjlXRVo05hYE+uQCOenZK9IWM006NxT0q+4XfJVUC0+0VJSqveWgjW7
+y3Vdm8s5I5vJY8snyIhP3qLtl7tNIeIOlPS4AweQK+neqbnLn4Q7fJQcS0m1
+tSEu9oW/nZKTwrL5x5+kAHhS8WEJXmgiQXMtA7qMlbQek+SJactk/5EcydE4
+xPpTswPYoDxSuboeaqp1KcPfCv2JB7/hYLUuGZsZJPki4UOJtA2q0EtRyyKW
+h5PzcKMbLYzDry6XlGtvlKDKM8pDOy17hml2namlzxy5aOoiYrGFVbwak+A3
+g0e8gc4U5p6XfMgE7txRby44p4WBwM6Bgc7NmzfHR3WS4YFvBOm/Qfu8VSsk
+/U4tvWo+relve80jtNZQXwvmztNCYrkczz3JhAQpkXaCHRbFaHlp5+HcgUNz
+ko7120h4aJbxOUhyIn5vU2qeAHYS2m9yELl15w65r00jSa33qMq7WbQpac44
+Kbdohgz//KMwb/EJt9dFGuHWKCQmOcJDT0mJ22y5u0jdfJKd0upTRskNysaU
+RZ2DX3b9LvePaisle78iJSZ1kXPnDpXhX25kdaJ1ODFNOn3YmBGFdZDvc+B+
+nsPlUsPVqLZx0SeAwSEihnmV8KGD8tpn78mabz+S9d9/HoZxW6THWh2sgyl7
+//h9dwRP4qg+6tqodpqze9NbGD9DUCvojWHrgWwMf2YvYQwf+vwx0A5ZsI5h
+x/7j/PaqxuIJHPly9BfbJIxG+LH1eCcZ7VoHEkxm/aYeuGDFclmuAWD3vmwo
+MJOwY5Rwvis9Aq2ky3PqYdSWxVeRyiPJBz7Ngx/3E2/YJ4+frbH5lqdqSsa1
+T0uRB5pKpQ4TZe0778euTzbKQiKyUcNGYo/VQAXzUmT7tpmtPwlF9k4X1iD/
+/Ns2efXNdbJl+245eCgnsG1yv6gh31SlhqRcr3nyU00lqNdP0luMlCc0Tz50
++EhRjzi3yT0mzgoKXo+RQJw/KX4S4uwVQeE+vV27pUWvAVL0mocko0ItKfFE
+O2k/eQkbpqOOaNHwIBh2/DHNw8psdDVn+WJJYxqsisbRFl0USUZLMDxLyo3M
+kvc//SwomiDZVatWxcQDfTbVkEA8OIZHJRLvuY3taclRU+0ydJgUvFrTzgdf
+kuAlzaubDJWS7cbJoo+/DvcolHIGD6O7NUeatnCJ3FG9mdz1Sg/pPmF+OGm1
+cPVKybjzVgle0dy8dw+NPRO0Hpwjly1cFjYd7HwD8nPk6pIcP0UnzaNnn8CM
+v2XamMHBcDqX2RgztMCb9x0gafdW0hxaQbnLYAkGTZHUodOlyuwVGsyPx8zQ
+u23YpZcmAHdJvvtrSb5qXaV4wyHSc/G6ENwrdWwqhVpUk2BoBwmyRkvpxTNk
+xFebwh2kxgwqJBdPYAZIcK+zSGTGPzfCjnGnGASJcw/aKCgHVEyPNm4s+Z5S
+Ttq1UqMYoWExSzJmzJbO698Nl5lHnBSTX9QxCv5LQ+h9T0hQX8N/Fy2L+k+T
+8qPnsydB9hzcLx0WT5azRreWc2cPlFrvLJUjJ44X85jw0k5jglUilmUnMOEv
+p/aZIJPJPUU+QiMWi6j3xlsrw3D69jopXecxCbqzmXegBPMmSZn502TwhrfC
+zbylnMewh7kQW9SqP6flUDcJxkwI9y9cMlcD3gmXNJ84HuZoOVo5504y56rG
+lUmJcYCFnQlc+Sulk3Fl2fW+/Qdkwco10nrgaGk/bIr8sC08QbGwA0r2cPec
+O1HO7V9XykzoLBcsHCX9P3oTIuNt8iyg27Jtu/z6+y6WoKQ7INmlvvVw66ZS
+mLniQR3CnQqlFs2SYV9+jtnZGSh2XJjLpI01HNxtljDWbAk22A8Ig/2POuF6
+rIWCxLl37tktrfsNlSLXPyGp99eX1Kc6ScmXemmS9kYIBHYkxHF93n6N8hs2
+bZSDGhiO/2HgniHf/fSLVHy2pvrVA1KiwsvSfvRc+WXnXu9NJlHBhVV2WjxR
+zh7dVspN7ycvb3gVqwwsCNlBmfzmBxMy1UhceVi0iTeCyclYJKB2Hz5MCl93
+pwSP1ZKggeJU+1GSr8NYeWDELDmQcyRGXL9IilImd3Lqr1ulwjMvScpV90lw
+e02tftpIarVecnr9ITL/tXfUcQ9Z1xkp7cs5KO9+wQTpMTuYBT199fXX0r59
+BzzDeLM3FB+Ps6WYN+DczWedgrej0nP0WMl46EHlS6NgryFhDZA6bpZUmrdS
+Dhw56s5eKRztYRkwRNL+rXh9v9raS220blA/7DhWwWaMFH+5q3SYtER27M8O
+km0ls8CHj+FQLFGes3SRVKvXUOron75TF8rugzlmmHbmLlE2gTOiLIHK54wn
+0sM3zjDe1za+KyVrPC5BBwX1UUMVkKdL/tmzpP2G9XI4nrDMH57PtHP3Xtl/
+ANTJjsCgSJg+NO7VR1JvV8VXry1BWwWTfhpqR0xXZJ2hjx0uGU2GySMj58uB
+QzlRxC4WnxMEJZQNlEPMgbE5sHvPnvL0izXkvudqSJVa9eT62u2k2phFAK6V
+tn5tksC3v67pUfcZo1Al8L7geL+2gsnzI7pJ8Z4NJG18T0mbPUrOXDBFBry2
+jA6pnUzJXuZWfQbLXTVaSeN+E6XjiInqy3u9LRdRA61yg/oSVLpDgsavSNC3
+lwRjx4VRJcicKcEQ/f+hWVJ6WJa8++mm8N4STt3RosajoRBYfEDzj0kSWl/U
+S5S4cDpEa4f7q9WQ1OsqSsrz9aRos+5yd7O2Uqn7INnw3c8mGGof+nEE+wTB
+ANeU17mhJXehMzm9pg+Gw8hm0No5UmXRaHlm5VR57YcvVSbH7MhQ7vrt9+1y
+V9VXNMV6TGN8A0l9tosUqt5TOk2ai8M42UTHnS9b94aUevEhCVprEjRUU7FM
+jaJzpyoIT1ST04JaI+/F85fKoWPHottOs/fNxrZBHx3i6b7ainWiKp178MnK
+hy2asd5ZU7HjoXslaNZMUvoPkQv7D5bqLVpK1uvr/D4XSV/0Ot88YiICc8Kj
+xLHqJGKKmqok78xhnODveBdZtCC682C1/f+qTTwOIHYPATGlywS5e9xCyVbQ
+KGagkXNIus+aIOU6VpOiw1pK0Wl9pcj0QZI2oqPkzxwiJRZmytCvPqNgj9ev
+kGP9vnO3xrpdpOzRsCVCOdg8JWUo3Q8qMEpPJoUBCzqrpOe06TE9d7Zk7qRf
+wfDjWauWS+FqqrUujTXlHCypWZPkP2NGyES1IxzJ9ohYRUbcd7K0vR72QnWm
+ox5NLktbRLZt+w6Zv2K1zF+9Tn5Ung5k29vQowX03UaNkXQAuH4TCXoMUnyZ
+IsG42VJyzEzZpxlfcU/ur32wXvq/MVf6vbNYei6fofnpAHlsxWSptWFpuLIz
+xfkeNtykWx+5rkp9KXVHHemsCTc7bTE6+jAAEskmwiNeIjy2TyE8z+i8ddIF
+Zc+BfdJ25mgp26O2lM3sI5cumyTDPt4QptkIXqUVr7+3+dgkkrNXC+SmFUUS
+JRciOCcs3Vu9vmRc97Tkv7uRFH6yvTQfM0f2Hcw2S0S1q9V1ClZ7WC1QQX6E
+Sm9apgRz5sg58+bLfu91tOHKmT9OkBKFWy9IAY/zu5jlFQ/RrmGXnlJMs/vC
+d9eQ4k+1lEtqdpAnGraUAYMGSydFLNwUSdEtNNc8Eb4AM95aVzCMKOve3SBv
+fvepvP/jF+GgzFcxlezWA8XrsC0Di973mEdUmHFieuKLCnfAnlsqihe47VEt
+ZNWe6/eRoOVIKdJylCza8KF3mHUB2X1gv1zYvKoU6dFAUbyH5J85SsounCoD
+PgmbPGWdp53Q9P/Y0aizvV0RasXqNXL5HQ/Inc9Xk3s1aj1Zr4FUbN5ebujY
+TyauWBueL+J5WhjoU/2lUDQdbFG2Xmic20xn7pLCmHMrpP0Q73MeLr85mC2l
+brtHgief1zK4k8amUWFcTh82QyuX1XL4qL262b2M+L0N0nP1TLl0Wg95cvUM
+GfLxm3L4hNV2JfMADMDMHKntsiW1aNGypdxWpYqc8WI1Kdu6naQOGS0pE2ZK
+kUmzpc+69TRMY/rpidG00aI/VjS5GjGPV3QnYTcxo7GVrFSssMtWjHOeekqC
+2lpe9tJURGNhkDVbYTRL+r29PqyXbRVJZOx/UNuE8yIn4tO5ysaxh1INKCAs
+AwWEZaAARWHgkEsSxiGaZSqrmOs+qyJWMU/mqIssOWv+XBm7/p3w2XY+E88m
+xLvj2u1ga7/pkMC5PxHkowHdEkwfznnqgFmZKvQXtcLRUnXacEmbN1kuXDyT
+jcdlnMBs9x7MmQ4p5mAMnLN8g8Ua7tz2IMX1ry1RJcntOmmklGxSRYoMaSUZ
+mQPkwleny9BNH0jOkRw7f8zaQshJfdk/1cdSlAQ+iej22hfj02/F2pvvDmu1
+MXBFllw8tp2Uz+ovz7w5X974/kvKghLOPS2BsEAIlsMnvMErfEIFCYSh1J+O
++C4YLu0bnDVeerw2S2pqJrRYWcxaujA8dvinrTupSeLD5sgywS6m55Tf3HO3
+joQTOyq1OMmgjUHPmW5wggz8/OMhRwUtsG07dmlw2qOPOhjKwG+e0/KwQAp8
+HyWpDKH7jzx7g815zapxXoQCWDDjTI6M4rFqyw7Cw4X+sPMTC7pdeSfkJy0i
+63ToLulXPiipN9eQEpVbSOfJCyXn8NFYIrCJfboXc1uNyiO+//kXmThnvjTs
+Plh6jp8lW7SOzd1TlZuh0bl2ErKv4ALfyV2GUUg2//Cz3F+jntz4fFO5tWZn
+aTZoivyu1cqJvFIq4QnCd+8P1b1BUmAEy8APWfbvC8IifQknCA5ArNOui+S/
+sqIE92hm+2JHzfIGy+mtx8jaT7/yln9FpyJjbaSxx/MeJPbJl1/Jvx+qIqlX
+3iMpt9aQlEfayIX1Bsi6j780hm2akjwhQRb+ougHPGTYqulUuevvk3z/eUyC
+BxtKPk3P06v3ksaTF4eHjngyiRSbHiODHS+EXDZu3JgCtCutXbt2keEjhoVb
+J3/4ngPoj/vxrKyTCkcBFvtvBQnurqQg3EIL38ESDJiqeW2WDHgjXJgfS4XR
+7MUZCuImle1a89Zo1VaCy25UwWoNXV1r6GaDJb3dWHlxxipjneyJkEBKkCAV
+HBpxkxKYVIi/nYeOlAI3EAzruIRcCxFNyAt3Gi+L1r2tGLMk9GCVSoaLdz6O
+EKFp5+EymLUFA4biTDKG/fGXLTJzyVKZ9epq+W7L9tCm7VXrO1Wqd9TRGvlZ
+VUp7hehhOvzUmVJ42mzpu/7dUDbnOJzG4uhE4Y4kRfywzPuax56U4Ba1uBeV
+hXY9JeivAW70HPnXzOUxhJAysLA00mseyfj9DpMMfepK9RtKaiVNEBs2i9Lr
+4Zpej5klBUbOkAUffCpL1VaQzFFboxi9j4M0FFsBYQETpIM0bG8mgE54dj7k
+IklGaCUVn6ut1aMa/l0NpMQTHWTGa+9xSL5rpbCrMlu6TRojxes/LUFvtaTJ
+QyWYN1XOnp8l495aC9C5qZ8icRPfvWBYy8BtUuElDYQP3yVBU63M+/eVYOJk
+yTdrntyy6jUTFO5t75pLEBRxgYCfK6gzw9riOc1xUp+rLEEHpWi42rYGt3yz
+5kg5TTJWa7GFU+FcliOBYyHCqC5BfPIkOtJkyOiWXM2D2tyNbgXClnujbv0k
+/SbVy9NN1WL7adKqyWiHifSPrDFDfPldgXbv/gNgkqXyNBG7L5oiZw1qKuVm
+9JOL5o+WMV+8Hy4wjxZKFg4N2vAZI5uxcokUrnqfGufLWpj3kGDWWDln2RyZ
+/t03sXGBONZ6SZAZU4o0cGjpRjI7LeTprXffk3Prqd12fUVrtl4SzB4rBeZO
+lB4fbpBff98mixctjt9IAQJjPZSNABsyMguyGB2XWyVlt4L4aRWV4ieei2Z5
++o7VAkfTTU1v3/pqc7xjImzB7t0tk1UFd71QR+r3GinttITcsmNPYBurcg7n
+yIbPP5C3v/1EPvg43HPl9nwXCldGQNpKzUR27N4lbacOl/K9a8mZ4zvJpYvH
+SetN75La/g0h+TnOgy4cQd3gcSPlH/1qS6nhraTkpB5yaf+24VEA41U/bKDA
+aHgkunKJmZ2o5DcQ7VQV+gMPNNNKp3ZVCfqoKnXYYOZsOX/+QjlgrZwCYeuh
+QU+N4qwA/89Tku+BppL/qU5yf4/JakE5lrPZ6y4ib4vGsZMXSVhwJH72Hdwv
+H339cZh45CJ97hxU7okYsTz8fOc+LzwDLeY87B1gg/sYjT1DWUmp0MLjWJ+C
+Vph4UxJLOqbw0wFZU6VMyxckfUh7SZ8xQk5fpPnpl5/Jsdwmx3bNqor8+zYJ
+bnxIgmfYG9036tF2mSgLPv4qBKMLveDIlo1N3/xPpi9aIgtWr5Udew7abBXy
+oUQgZ4jPlIzmkS2JcWyf4b6CRTCaJCbazlIqjjOwDaLCNmBNembNm8mTJslX
+ihk/OH+wXcg2eapaKeVoZrpkyPIZ8tzCkfL82iwZ8XlY/6R67Be8Qdl/QkuW
+5h0UY0eGXdu0UTOlyjwtv48dz32ZBW/m/X27phW7aQCXcRjDjOWLLRQQL7lJ
+Uq59WjLubiCPd5su2/dnxxN54Ar9WMBBE5nzHP9+18iJxnYQI2tEgM8pi7aX
+2rZhURlWdIbi5ywmNZCW6+wdUVbNeHEoJRdm8049x+8mzB9Xh/zR/6wXtUON
+oFwl3t2h9XSPzhoktdDLmiUFZ86R4R+Flh/P10Adb1wYp/Hh5mdekVtf6iTt
+R8+U3fsPxudfcs37n21SEV4nwXUK9E82kaBOH0lvOlyqjA3PT4pFSYFBbHEF
+hn/+COkh04kJokQmOJh7NaqJkkTFWibR0pKicaJDOLdEB/cmUCFK0mLu4ZDm
+3MLwj9zzixPkaGsIyC76Zk2W0s1VYANaS5A5RDLmT5Yrl8+T7OPupWAFwtNN
+WvXpK2mX3ypBxeqaI3WUInUHSYd5awlZ9v5wtpQ06NJN89qbJKiilzVVzO+p
+Khg8Q84dPkM+/eyz+OUcJN1QTEhWMdtkpC2LYzIvibhoSLAjTaHKxGVJE7PI
+Nzhx+RCVmP1YFYHl/UlcRZKL62xnM5wN23/5dLlkTDu5ZM5gqf7WItmw5fsQ
+TU1WVB71uvaWlDuZi1eRdhqmGc50OXv4HI7lNlnRqGvWr4/m0Jou1tO0sxfT
+EhoGsubLRQuXh8HDltoA0NaKMbsijbS1d2l/Q1Bp4UomBEUrw71i161AjuwL
+gWFbTEDiplyLfdnSbqYoSIhorsavfi2RXGCnO4EBTezN2/zTb/K/n7cp11F9
+HG2zPRG25OPwKBILkRnhSo0U9Z97QgJVVjCKQzjmyuVzl8hRe7lo1Amfv3al
+FKtyrwSttMobrrF0huYvi+fIre++k7tn0M0e06QE19VWzOBs+jH3YIi/kiOv
+56BrQozDkJjei6b8iseQZ36KLAkUrMxGPJY42cZeJ8uQ0LKeKG3BihJ9mhMl
++zSmzF8gNz5VS1I1GSh0R11pPnwm83aBbZMO53M2vCWlOPJvYLtwIr3Mopky
+9psvEXYp96h9Bw9Il2mj5cKetTVH6ioXzB8ldd9bJR9v+SF+GZCtU49oiv62
+RJ5WuUKf5Q9/frfoX4kQUwK28Et7rfNlSaAOkKA3BNTZRg0T4Z98147a44Fc
+SEiJN2ZG82Kbf/hJil6lUfVWrVqqtJKgVl8p1mSEzN24KUy9I7LT5WBOtvRe
+mimXkEAuGi31312puUm8KotHZSsUrP9+k3z823dh29QOlcQCOIz906++kakL
+FsvCNWtlf3aOzY1blHBViD+jgD0xo/B3RJhqG4nC3y7xREdpwy1YnnWQsDZg
+z0RHiGLHTezF5gz0MkhlqRHshFNCRHsOD7r5Tgmq1lM/00Ss1wRJ7ZcplTKX
+hJvN7Q1CCWH5AmdvLPF/rkkLSbn0Fsl3/XNS8tFW0n32GtmnpmuCoRuFBFCr
+ytASUFtSxPsiTy0Yf/ENwIgoL3JuafCWmLsZvJGRYJOAKi5prUzs8vxTyAZ4
+66Y5RurD90vQTIvAAUMkmDBdUqfOlseXrQrXXV3nfBPZfKC5RPCPayW4+TEJ
+nm8ZnQHVcZwMWv2u7SXD5JGDa0ZZRmodN3Zh/T05kEa4jfHunQR54QnJmiwI
+wj48JcoCOfzjFHJAvmvf3SCn11K47sKpdYMkmDNVSiyYKSM++xjfCfwID+RJ
+WIFGsqFKnjh3nuZYtyjkK463VRwfOFEKjp4ldVe/Y7IxCAd11bvP8CiyDtzf
+kw2dKXvpzVme89gLs5CN9ZJs1y6PMdzJ4zyXJxGMxb+cI4dl4KIZcvnQ1nL2
+tH5y3oIxUnvj6nDthh0SS8P+s68VLbT6nbtiFQeBuaCVFp4P9PNvW+Xr73/W
+GLqVVwPFayQgduaKZZL//gpqSJpBDOgTriAvPnuejNj0ue33IsWn0U/1o3HP
+Xm4JSpJo0aD7+0KzE4dPTwDrxEQLAzLEwclAHCZmY6FdlURo8TnJGuk2/vil
+fPDz16CyJV9M5g+eNFWT8Rsl39VPSpF7GkrbSUvlt90H4iODWHU3TBn914Na
+LV9VSYrfWUc6TV4i2/YedHLLCLfvPtKjlRTv8LKkjewiheaOl6s03836/MN4
+c7/tzMMTlUQTGiWtJV2RWOKDn+ycFGfaoYslESKdKwqu3DWPxfIkXyyZN9im
+LjJ0AsLJrYi1ziP/k0SEtgMThzIn84uZjzZ9IWmX3SDB9Y9I8JgWMy/3kvwN
+hkjlYXOY8XUlZQRWn3z5teS78BoJrrpHgocU+F/sJmma9D81bqmtsdh9cJ/0
+WTldnls2XhqtXySf7bDdCLlddXqvOrSdlUlUZmtF7rK4WIQkPBgLvowsECFh
+LkGE1KrYIvlrsSTAxsCIEWBDhziw2SF2aWK0vMsWueMRJscI9NPjLU3TFi6Q
+rKUr5asft8qe/dmWfzJJzsbxlHApsxY8TbqG74YIBk6XMwZnykeffBIfHohK
+pio5wZXXS1BZ87N6WtV3Gi5Bv2lyyei54d4ye+Ud835o3G2PsaWBZO72UpYE
+2ZEJ0alnyyIzhfQ7vKNSTHb+O3kKJfFhZIf/0gOzVzmjAguQyC724ZvdQ5mr
+scWi53uOWKd9F8l/xd0S3PKSFHy0jbSYuFgO5Fi2GmXvWcuXSb67KYHqaKnY
+W4LRWgJNnyfnzl0aVuux9NTmJ2vEDiqopF/WCNFFI8QILQoy5ymwzsN2Yunx
+XBgg09f03pcetkC+niA91EzJg2+zxZF9f2y/SpAe/mzdsPQk0jOrQ4I4Lwho
+0vMRsKIj1JYD0D7S3Pp8Rw0zCQVZoviAWlQdtajWI6Vkxwny6ifhom9bTMOo
+S9e9JqWefUAveVmLn54SzJwgwaJZcvM7b8px+SP257BQenWpFHtM1dH0Ra3I
+u6uYVXwLZsntb71ZxpMclkN5o2DmHywDErLVw0mumBMCDkd3mB1R2B4bu1Ri
+/q4xhPpdfPBEbq1JkDW4Q2IMiiR8uHMJSHBXgsTcKpvyzv155II1qyV/Rc5t
+1Pyjx2AJRk6TAmNmSvcVr2ntFDWaaRL+9OtW+eaHLbJ7b3hMk3OD6JTaPnOm
+yCV9Gkjpke3k3IXj5Na3lshHW76Pwwszxd2mjZWLe9bVa9rLeYvGy+1vLpbP
+tv8al28WbymS1KftgCRL4F5//XWToQV5mCLHZbNczZo1QzHbCW6k+DBLfy1c
+zKJgZEIzcMPEDNzAUBPafacSWjQJv3rD23J6tUclaK+19thh4bkUZ/PYd96O
+5pF1qLodusi/H3lRitxcVeoPzJTZbzMVdMK6j/uyD8i4tbOiQij3qOpd2ftk
+3HpE87ObYoteOU/hw4oBFY0deObnb040lopgJwQR4EWt0A6FAMJouxNNyWt8
+R0MK4KbacqXkAjjfyZbkbMDiLDmtRz0pnTlALlk2XcZu/lywFfCrYZfuknrZ
+zVotVpXgidYS1B4sZ458R/bmHHEnj+ZGOdfGKuWxxLoQun6OJXt1IBUg2mQB
+lS3pJHUCrTB/jj8gSKrrnGRV3gWOfqYHRr86XUZvXCEfbvshbqTwSo2KVWtJ
+Pt5i/KJWJa14WdIkKTVguqz46vsw6Bl2QwmSy8XP3LlbhTAjvpwzVUCS6E0M
+JobCxEmovNTBFNTcUl0R++knJWjTPno30cSZUnDiLOm5fE1Yd5s0gQsSfCBD
+kcUI8qdMI5HFr38ErRiQ6U+NmidZE2q07D2wX6p27SAFXqkiQR+lZRIHmmbJ
+uWr24xWwWcZ1S4If0+5RYzX1+fmLo8XeYodwaCXh+YQJ/FUJMSskR6Gqw1iV
+pssMUw4dlBcm9pEyg5pLmRmD5PLl02XCt59hhe4gw9zFK65rYD5m+QAlnqPF
+lvdAix0crY5jNCBgHkQhozZ6uVNr9hG1pNfnytj3V8nHWyMLKe2+Y/Zy07ff
+yabNP8mX322RPfsOxO+xwfqBaqa94siUexJDLpC5tmV6HgMiHBI/dLQHPPq8
+1Q9RoIzOB/pWUe25xi20flaPvKaKFL6zrrQfO1e9+KiRw2yUpU3ehkHCF3JQ
+1DByyntiIm0iumle8Bdk7N2/T5ro1cHFWsLf+JSCQnMJavaR05qPkqWffH2p
+dzelFUmn5h9GBhEAg6KEd2RYmkmzhjf+8gcDI/tVqdybnJzo5IQioZ9aucFk
+T812nSXfDXdoBV03ekdL93GS3jdTnpm1Emww8jAmShDirYrfNn7YelfFHyPv
+Qk9KGDauoKSehKzIiYuFkwUffL5JJsyeI9MWL5ctOw/Krt175MF6DSR4WCGp
+iUJSXw3Q46dL+pQ5UmPtOsi7zCOPQIki1U2KeOSBqEwMOPLsxWBgAILF4VXI
+iefPOfJucqjJxH3fseMkH0q85glJvaOR3N99gXy3dacsfXudlAp7GFoajaWH
+MU3OXDJfpn0TvcnH+lysfmCN1I9btvG6PQv9BGfCj3OHwo50/7whR/o/EvCU
+0zsJ20wo3Zmc/hudeIG2Lzb/z81JVdK6Q2mt20dSmw6XR8Ys1HisecyS6VJ+
+QDMpO6mXXLJ0irT5bENJBzfczmnzfceOl6u1DLnphZbSVsuPb7ftiVMY/AiP
+IJdVKowP5Nu/f39XAIR8XOqpAKyFVoXhO07FQrQjdMYiLYX+raVQlWpqrN0k
+6D1WU7Y5ct6MVWEADkPBNx/LRA1un//+U7z3ho7IiMxpElyk6mP9VCVlv3pf
+ubzbDMk5eszPZKkBiCTqg8aCvTedGsCxcJlTBSyYKhwyxYk6T8PC3DLHiI8o
+A1+2apWUqXy/FjA1lYde4UKWYM4C+c+697SAyW1xsXT9uaatlOYKEjxVW71A
+s/VuE+TcobNl3Xe/lPVGouONc8ZnbuW22EF6R/c/PdGzNBCEU7YquI8pmIg0
+5FreJnmW4JLllm6vJIztKQVmjZELl86SzG++wAmN2i1qAXfXriXBg/dJ0Ej9
+tQ+NzRlScuo8Gb7xY9vS5cdI9VXbiA7g4r7gv6P2Cg//ydxMyoCimuQtHtXe
+NJKd7559OFv6vz5Prn9tutR5S8f7cqNLSaLSZt7ra6TES49L0FlJHTdUgtnT
+5PKlC2X2ps/svdvknsjChVDblw/ScmwXabkj9SpPsMQGOFG5J5LopmeecYxx
+knS3BVPkgkEt5IKZw+TaFVky96dvradFRU+eSPA9kXsYASkCCR95ohv+X15M
+gDL+eDHhxuRkPOs+Pnz0sHz43Rfywa+b5cvff/KX4ZNBkebZ2DbJD+C7sa/2
+fMG0ZFOFNyQfuI1nuIQP4oSSGh9n5W0NcIPY22kMtoFGRZzrkz+/rfvYopYz
+NXs+HTnbGZkvev5/E5hgMy+zfDj0tQmDuC57O89IbHZGB7G5FoCPJyEGN8h1
+7g581V5WpEbyX1ODypY2DOOqutt7VuDlS9ZXsJft4t3u+dd7TIC5MOH8xU3a
+RkUGhRH7fTq6EdAWIzjoTvVGsKMh3AhmSJTecADgq81d7T3cumH2cPCOwoD+
+u3JmD2engHvbpz38Jo98jIi+sTNiZ+B5R+jkaZm5UlLo8MA2yZM64aVuBHNH
+FEAB40w1WV+5s0OKhMyCT/2VLu7B9iYA/I+NAJZZ7Ny5M7giydO7hJ9lhEGT
+po/rd8ZvN6eKco+u4B6NyLEnPN+OaUk2i9DVQQFKJa9AqRDskgn31Ns9RWKG
+BFvNRC47xQOtzsJz6DBgWT169MgX1nPBHUnIxJCxvUuSPLWbu95iF7ZKha6A
+o5x/++23Qdy/4ZF2uLVau80pAYMYFU/r7i61zUbEZA3Z+cLzPtxqrMiweDEi
+tLkDzOJ01Yo/HFz1bA+EPAoWPtZCO18IhvE5rjTcQXtUqPK+wHsWhks5o8+K
+7DRqRzIbTiuGEpp4hbJZY8HzlTRlnTPJXBcmLcZzOj0UtNhT+eSjRJhaPD5A
+FuhnFIpKbkV1QBSnQTHTDbIjDJIGvIdHO+N4wGMPHKFXp+ydl3zgZuHHJeKB
+adHh3QyORKlqYJE6xTZ6YiHuha+h9tX03MIdO4WRT/E7hKRPPCf52A3d2Maw
+jQvCMy4dIqi39xfYuHyGWXGtju3O0qrk2bDxTYJNEDgrOQF1POaBB3RLJctk
+H1LHsZGwbVLBMO1N8UaAgkCUaMdn3Nj2He5SEzjTGxufcmPXcBDlC54sivEZ
+G9RduXJlClJX/zW5Mzz4xKXKe5TruI2xaeHQHLjrVZVxKy7c3KBlMrCiAz4f
+fhydbhntbN8Vj48CGN9eD2sTosY/j/cU4OY1g8c8AeDybi7a8jHrRLgV/U8l
+CB/tMzg2g+CxOgazwa3PAkGMwLUq/Mhtg8c97bvXp8YYXtYjwKtNHvUIQAIg
+BQ8FGs0E6eFj9qAXPmcqwLid9qOCKHjSY57oBJn6bZnkYz+YMLavfcYmr8L8
+gQ97P0Wi+WtqEcW+oIoHOJRAGAhiVI7iKZIEAu5xBPiqJzCZ6aF6Bsf3YN46
+OCZ9mFcCoswueNoRQAzA97jTitsSyQmoeBL14yIQgfrN9yDAuAf+GQaCVb5R
+ThM860kfY3FVafHkY9/kxrYTPpG+HZRmtk/EtZeakyyZ7bOIxI1dIRr7Oc/5
+zPTggOBZNDkB/3XOZ+o3uDcCUL9pwARgGkAApgFOb4sCbVDVjYRsbE5Fna+I
+RwDFkCPgXwmwb4NjNSx3MOdD/TzJH9ykr0ElijXBC57zcdYmEoAN4Mcmh8EZ
+vAbX1lEvS+IApn5TAeGVJBkCqOqNCG9JYwR8wYse8zgfMwT6rR1Ck1BjXphE
+/TzPVz/SJ24jeZyPvAmB8BnC0qdHXhdUd8wTPEh6+UMlg/NlJCfgnFOon0tM
+/QyGAAgZvv2TpDoinPUFL7mRcH+MEMtR60hPTkC5BPWb98O9r35sj8F99TOC
+GzxiPXjZDYL6gR7Hff7kY5dKovlE50PzwB7SZ07bxkcgaEqBrnY0di0PeeCb
+Kwx5UpITUCSJ9Hkot+G3hr0okgIe8/Ox1wSA89WPqIgSiYLxzmu6RlR+/NDJ
+tmOmczeN5/JvQ8M74ca9DPukineW3zQa+ZXwn4xwZFzPck1qE37nKM6UJBJH
+2sRHdAXDSBxmGZFIa6PyPK7VEVtHI9Zz4oMWe1sqBwJDN1cSPvmOp+Lw8EGm
+z1N5IpbpnujKTCfF1BCgmE6uVauWEk0xkR4uBbFsF+NyW0CjCiQI8v0flNxM
+8Q==\
+\>"],ExpressionUUID->"ab8dd670-68eb-4984-86d3-4fd7e55bebb6"]
 }, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell["Read hidden", "Subchapter",
- CellChangeTimes->{{3.7474074905878153`*^9, 
-  3.74740749298532*^9}},ExpressionUUID->"4a5e78ac-c337-4018-afec-\
-7e6564f2fe5c"],
+Cell["Hidden", "Subchapter",ExpressionUUID->"4a5e78ac-c337-4018-afec-7e6564f2fe5c"],
 
 Cell[BoxData[
  RowBox[{
   RowBox[{"SetDirectory", "[", 
    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}]], "Input",
  CellChangeTimes->{{3.747407556462977*^9, 3.747407565986784*^9}},
- CellLabel->"In[62]:=",ExpressionUUID->"b5bba6e0-ab2a-4079-bc0e-c2304ebe4510"],
+ CellLabel->
+  "In[864]:=",ExpressionUUID->"b5bba6e0-ab2a-4079-bc0e-c2304ebe4510"],
 
 Cell[BoxData[{
  RowBox[{
@@ -775,7 +1278,7 @@ Cell[BoxData[{
        RowBox[{"Transpose", "[", 
         RowBox[{"Import", "[", 
          RowBox[{
-          RowBox[{"\"\<ic_v\>\"", "<>", 
+          RowBox[{"\"\<../data/ic_v\>\"", "<>", 
            RowBox[{"IntegerString", "[", 
             RowBox[{"i", ",", "10", ",", "3"}], "]"}], "<>", 
            "\"\</init_hidden.txt\>\""}], ",", "\"\<Table\>\""}], "]"}], "]"}],
@@ -783,11 +1286,8 @@ Cell[BoxData[{
        RowBox[{"[", "2", "]"}], "]"}]}], "]"}], "\[IndentingNewLine]", ",", 
     RowBox[{"{", 
      RowBox[{"i", ",", "1", ",", "50"}], "}"}]}], "]"}], ";"}]}], "Input",
- CellChangeTimes->{{3.747407498755032*^9, 3.747407541130587*^9}, {
-  3.747407575302958*^9, 3.747407593618052*^9}, {3.7474162479772787`*^9, 
-  3.747416248078693*^9}, {3.747417060224572*^9, 3.747417060711174*^9}, {
-  3.747519190492344*^9, 3.7475191906408443`*^9}},
- CellLabel->"In[63]:=",ExpressionUUID->"7bbbe1e5-08b6-41da-bffb-67d03b2fa1cc"],
+ CellLabel->
+  "In[865]:=",ExpressionUUID->"7bbbe1e5-08b6-41da-bffb-67d03b2fa1cc"],
 
 Cell[BoxData[
  RowBox[{"(*", "\[IndentingNewLine]", 
@@ -815,7 +1315,8 @@ Cell[BoxData[
   3.747417057326858*^9}, {3.7474264680134783`*^9, 3.74742647183339*^9}, {
   3.747426951067471*^9, 3.7474269514511957`*^9}, {3.7476681589818687`*^9, 
   3.7476681616950502`*^9}},
- CellLabel->"In[65]:=",ExpressionUUID->"9456d6d2-f271-43a6-b9f1-48fbe0d05ff3"],
+ CellLabel->
+  "In[867]:=",ExpressionUUID->"9456d6d2-f271-43a6-b9f1-48fbe0d05ff3"],
 
 Cell[BoxData[
  RowBox[{
@@ -831,7 +1332,8 @@ Cell[BoxData[
      RowBox[{"{", 
       RowBox[{
        RowBox[{"-", "0.2"}], ",", "0.2"}], "}"}]}], "}"}]}], ";"}]], "Input",
- CellLabel->"In[66]:=",ExpressionUUID->"a530b07d-757d-47fb-bc58-e047824c9541"],
+ CellLabel->
+  "In[868]:=",ExpressionUUID->"a530b07d-757d-47fb-bc58-e047824c9541"],
 
 Cell[BoxData[{
  RowBox[{
@@ -872,7 +1374,8 @@ Cell[BoxData[{
    3.747426742172728*^9, 3.747426800314329*^9}, {3.747667553690584*^9, 
    3.747667581348771*^9}, {3.747667620237731*^9, 3.7476676652506037`*^9}, 
    3.747668151252708*^9, {3.747668598390423*^9, 3.747668598567533*^9}},
- CellLabel->"In[67]:=",ExpressionUUID->"1d2de6d2-6e17-4651-9d9b-a6c43e6c7e3a"],
+ CellLabel->
+  "In[869]:=",ExpressionUUID->"1d2de6d2-6e17-4651-9d9b-a6c43e6c7e3a"],
 
 Cell[CellGroupData[{
 
@@ -888,17 +1391,15 @@ Cell[BoxData[
      RowBox[{"[", 
       RowBox[{";;", ",", "1"}], "]"}], "]"}], "]"}]}], "}"}]], "Input",
  CellChangeTimes->{{3.747519195092215*^9, 3.7475192103032837`*^9}},
- CellLabel->"In[69]:=",ExpressionUUID->"4d3eac3e-d18e-4b1c-ab00-2e654a600458"],
+ CellLabel->
+  "In[871]:=",ExpressionUUID->"4d3eac3e-d18e-4b1c-ab00-2e654a600458"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-   RowBox[{"-", "0.597098`"}], ",", "0.844339`"}], "}"}]], "Output",
- CellChangeTimes->{{3.747519201458584*^9, 3.747519210592319*^9}, 
-   3.747606594511772*^9, 3.747620974990633*^9, 3.747624083107024*^9, 
-   3.747668600822134*^9, 3.748640508983295*^9, 3.748713843566288*^9, 
-   3.748793294173584*^9},
- CellLabel->"Out[69]=",ExpressionUUID->"68b008b0-b90d-4781-8f1a-72a6bd855917"]
+   RowBox[{"-", "0.529402`"}], ",", "0.930489`"}], "}"}]], "Output",
+ CellLabel->
+  "Out[871]=",ExpressionUUID->"d5ae7aa3-3691-45a0-ae9f-a20c842031dc"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -915,16 +1416,15 @@ Cell[BoxData[
      RowBox[{"[", 
       RowBox[{";;", ",", "2"}], "]"}], "]"}], "]"}]}], "}"}]], "Input",
  CellChangeTimes->{{3.747519195092215*^9, 3.747519214115221*^9}},
- CellLabel->"In[70]:=",ExpressionUUID->"c0b2541e-482d-43d3-86cb-67fbe1df6bce"],
+ CellLabel->
+  "In[872]:=",ExpressionUUID->"c0b2541e-482d-43d3-86cb-67fbe1df6bce"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-   RowBox[{"-", "0.4544`"}], ",", "1.41372`"}], "}"}]], "Output",
- CellChangeTimes->{3.747519214488052*^9, 3.7476065946305933`*^9, 
-  3.747620975062167*^9, 3.747624083206509*^9, 3.747668600933214*^9, 
-  3.748640509067918*^9, 3.748713843634903*^9, 3.748793294237879*^9},
- CellLabel->"Out[70]=",ExpressionUUID->"ac0c3a31-ab6b-44af-bb77-42d5b8bc890c"]
+   RowBox[{"-", "0.388319`"}], ",", "1.57692`"}], "}"}]], "Output",
+ CellLabel->
+  "Out[872]=",ExpressionUUID->"05fb406f-8c41-447a-8d83-12502e3daad0"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -941,16 +1441,14 @@ Cell[BoxData[
      RowBox[{"[", 
       RowBox[{";;", ",", "3"}], "]"}], "]"}], "]"}]}], "}"}]], "Input",
  CellChangeTimes->{{3.747519195092215*^9, 3.7475192176313953`*^9}},
- CellLabel->"In[71]:=",ExpressionUUID->"14cb596c-accb-4857-bf23-a3e9c10c00e7"],
+ CellLabel->
+  "In[873]:=",ExpressionUUID->"14cb596c-accb-4857-bf23-a3e9c10c00e7"],
 
 Cell[BoxData[
  RowBox[{"{", 
-  RowBox[{
-   RowBox[{"-", "0.0012989`"}], ",", "0.153704`"}], "}"}]], "Output",
- CellChangeTimes->{3.74751921799009*^9, 3.747606594697609*^9, 
-  3.7476209751290627`*^9, 3.747624083294483*^9, 3.747668601133378*^9, 
-  3.748640509150978*^9, 3.748793294304429*^9},
- CellLabel->"Out[71]=",ExpressionUUID->"0faf6392-92a4-4bbe-b278-0c4ad3790b2e"]
+  RowBox[{"0.000147783`", ",", "0.184895`"}], "}"}]], "Output",
+ CellLabel->
+  "Out[873]=",ExpressionUUID->"7df5abd5-d2c1-472f-9117-ede9f7c1a3e1"]
 }, Open  ]],
 
 Cell[BoxData[{
@@ -1063,7 +1561,8 @@ Cell[BoxData[{
    3.7476071485068293`*^9}, {3.747620995708537*^9, 3.747621013519421*^9}, {
    3.747621147112234*^9, 3.747621148678307*^9}, {3.747621852001958*^9, 
    3.747621852135659*^9}, {3.7476681858956547`*^9, 3.747668186505333*^9}},
- CellLabel->"In[72]:=",ExpressionUUID->"031325fe-1383-4324-874f-8be8fd98afdf"],
+ CellLabel->
+  "In[874]:=",ExpressionUUID->"031325fe-1383-4324-874f-8be8fd98afdf"],
 
 Cell[CellGroupData[{
 
@@ -1092,7 +1591,8 @@ Cell[BoxData[
   3.747606588416774*^9, 3.747606588463126*^9}, {3.7476066280308657`*^9, 
   3.74760664251406*^9}, {3.74760673789764*^9, 3.747606752412451*^9}, {
   3.747624135748311*^9, 3.747624186377863*^9}},
- CellLabel->"In[76]:=",ExpressionUUID->"3caedf0c-88af-4aa0-89dd-1542043bce2c"],
+ CellLabel->
+  "In[878]:=",ExpressionUUID->"3caedf0c-88af-4aa0-89dd-1542043bce2c"],
 
 Cell[BoxData[
  Graphics3DBox[{Raster3DBox[CompressedData["
@@ -1263,280 +1763,272 @@ kiRJkiRJkn8e4JVAzg==
       Rational[2, 3], 0.6666666666666666]], EdgeForm[None], 
     InterpretationBox[
      GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
+       0.251896, 0.262673, 0.0168869}}],
+     Ellipsoid[{0.251896, 0.262673, 0.0168869}, {0.05, 0.06, 0.008}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.469325, -0.362318, 0.044955}}],
-     Ellipsoid[{-0.469325, -0.362318, 0.044955}, {0.05, 0.06, 0.008}]], 
+        0, 0, 0.008}}, {-0.328818, -0.285198, 0.0241425}}],
+     Ellipsoid[{-0.328818, -0.285198, 0.0241425}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.844339, 1.41372, 0.153704}}],
-     Ellipsoid[{0.844339, 1.41372, 0.153704}, {0.05, 0.06, 0.008}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 
-       0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.0718441, -0.0645663, 0.00047918}}],
-     Ellipsoid[{-0.0718441, -0.0645663, 0.00047918}, {0.05, 0.06, 0.008}]], 
+       0.0908846, 0.0816614, 0.00202741}}],
+     Ellipsoid[{0.0908846, 0.0816614, 0.00202741}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.5657, 0.870887, 0.0788497}}],
-     Ellipsoid[{0.5657, 0.870887, 0.0788497}, {0.05, 0.06, 0.008}]], 
+       0.656708, 1.02925, 0.106119}}],
+     Ellipsoid[{0.656708, 1.02925, 0.106119}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.543411, -0.399492, 0.0589306}}],
-     Ellipsoid[{-0.543411, -0.399492, 0.0589306}, {0.05, 0.06, 0.008}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 
-       0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.405692, -0.35504, 0.0427707}}],
-     Ellipsoid[{-0.405692, -0.35504, 0.0427707}, {0.05, 0.06, 0.008}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 
-       0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {-0.572054, -0.4544,
-        0.0691079}}],
-     Ellipsoid[{-0.572054, -0.4544, 0.0691079}, {0.05, 0.06, 0.008}]], 
+        0, 0, 0.008}}, {-0.18688, -0.149032, 0.00783308}}],
+     Ellipsoid[{-0.18688, -0.149032, 0.00783308}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.145826, 0.148715, 0.00649926}}],
-     Ellipsoid[{0.145826, 0.148715, 0.00649926}, {0.05, 0.06, 0.008}]], 
+       0.115447, 0.116133, 0.00337285}}],
+     Ellipsoid[{0.115447, 0.116133, 0.00337285}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.402812, -0.364919, 0.0367684}}],
-     Ellipsoid[{-0.402812, -0.364919, 0.0367684}, {0.05, 0.06, 0.008}]], 
+        0, 0, 0.008}}, {-0.230252, -0.192079, 0.0119528}}],
+     Ellipsoid[{-0.230252, -0.192079, 0.0119528}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.0645288, -0.0564042, 0.00276432}}],
-     Ellipsoid[{-0.0645288, -0.0564042, 0.00276432}, {0.05, 0.06, 0.008}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.522048, 0.809901, 0.0627745}}],
-     Ellipsoid[{0.522048, 0.809901, 0.0627745}, {0.05, 0.06, 0.008}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.529702, 0.799778, 0.0702756}}],
-     Ellipsoid[{0.529702, 0.799778, 0.0702756}, {0.05, 0.06, 0.008}]], 
+        0, 0, 0.008}}, {-0.33436, -0.246791, 0.0233387}}],
+     Ellipsoid[{-0.33436, -0.246791, 0.0233387}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.180109, -0.200008, 0.00726358}}],
-     Ellipsoid[{-0.180109, -0.200008, 0.00726358}, {0.05, 0.06, 0.008}]], 
+        0, 0, 0.008}}, {-0.529402, -0.388319, 0.0564502}}],
+     Ellipsoid[{-0.529402, -0.388319, 0.0564502}, {0.05, 0.06, 0.008}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
+       0.32664, 0.462551, 0.0269108}}],
+     Ellipsoid[{0.32664, 0.462551, 0.0269108}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.389088, -0.290507, 0.0335152}}],
-     Ellipsoid[{-0.389088, -0.290507, 0.0335152}, {0.05, 0.06, 0.008}]], 
+        0, 0, 0.008}}, {-0.294847, -0.258533, 0.0196702}}],
+     Ellipsoid[{-0.294847, -0.258533, 0.0196702}, {0.05, 0.06, 0.008}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
+       0.752753, 1.21881, 0.133756}}],
+     Ellipsoid[{0.752753, 1.21881, 0.133756}, {0.05, 0.06, 0.008}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
+       0.41085, 0.551559, 0.0452777}}],
+     Ellipsoid[{0.41085, 0.551559, 0.0452777}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.285963, -0.225091, 0.0161592}}],
-     Ellipsoid[{-0.285963, -0.225091, 0.0161592}, {0.05, 0.06, 0.008}]], 
+        0, 0, 0.008}}, {-0.0564116, -0.0453833, 0.000734179}}],
+     Ellipsoid[{-0.0564116, -0.0453833, 0.000734179}, {0.05, 0.06, 0.008}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
+       0.309464, 0.378712, 0.0261663}}],
+     Ellipsoid[{0.309464, 0.378712, 0.0261663}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.439644, -0.383266, 0.0430066}}],
-     Ellipsoid[{-0.439644, -0.383266, 0.0430066}, {0.05, 0.06, 0.008}]], 
+        0, 0, 0.008}}, {-0.387583, -0.314163, 0.0324288}}],
+     Ellipsoid[{-0.387583, -0.314163, 0.0324288}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.233972, 0.346515, 0.0136103}}],
-     Ellipsoid[{0.233972, 0.346515, 0.0136103}, {0.05, 0.06, 0.008}]], 
+       0.2771, 0.394863, 0.0190325}}],
+     Ellipsoid[{0.2771, 0.394863, 0.0190325}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.0965868, 0.0842179, 0.00416}}],
-     Ellipsoid[{0.0965868, 0.0842179, 0.00416}, {0.05, 0.06, 0.008}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.395611, 0.567811, 0.0401012}}],
-     Ellipsoid[{0.395611, 0.567811, 0.0401012}, {0.05, 0.06, 0.008}]], 
+       0.141674, 0.152288, 0.00516425}}],
+     Ellipsoid[{0.141674, 0.152288, 0.00516425}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.552234, -0.397287, 0.061289}}],
-     Ellipsoid[{-0.552234, -0.397287, 0.061289}, {0.05, 0.06, 0.008}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.669511, 1.08417, 0.104037}}],
-     Ellipsoid[{0.669511, 1.08417, 0.104037}, {0.05, 0.06, 0.008}]], 
+        0, 0, 0.008}}, {-0.0479313, -0.0551292, 0.000566383}}],
+     Ellipsoid[{-0.0479313, -0.0551292, 0.000566383}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.175748, -0.154443, 0.0082365}}],
-     Ellipsoid[{-0.175748, -0.154443, 0.0082365}, {0.05, 0.06, 0.008}]], 
+        0, 0, 0.008}}, {-0.290652, -0.219041, 0.017976}}],
+     Ellipsoid[{-0.290652, -0.219041, 0.017976}, {0.05, 0.06, 0.008}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
+       0.115381, 0.121953, 0.00342526}}],
+     Ellipsoid[{0.115381, 0.121953, 0.00342526}, {0.05, 0.06, 0.008}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
+       0.930489, 1.57692, 0.184895}}],
+     Ellipsoid[{0.930489, 1.57692, 0.184895}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.154983, -0.151971, 0.0049879}}],
-     Ellipsoid[{-0.154983, -0.151971, 0.0049879}, {0.05, 0.06, 0.008}]], 
+        0, 0, 0.008}}, {-0.41953, -0.354487, 0.0385173}}],
+     Ellipsoid[{-0.41953, -0.354487, 0.0385173}, {0.05, 0.06, 0.008}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
+       0.11627, 0.123027, 0.00348288}}],
+     Ellipsoid[{0.11627, 0.123027, 0.00348288}, {0.05, 0.06, 0.008}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
+       0.0778812, 0.0817686, 0.00156406}}],
+     Ellipsoid[{0.0778812, 0.0817686, 0.00156406}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.228069, -0.164195, 0.014637}}],
-     Ellipsoid[{-0.228069, -0.164195, 0.014637}, {0.05, 0.06, 0.008}]], 
+        0, 0, 0.008}}, {-0.111058, -0.122363, 0.00305262}}],
+     Ellipsoid[{-0.111058, -0.122363, 0.00305262}, {0.05, 0.06, 0.008}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
+       0.310878, 0.371, 0.0264711}}],
+     Ellipsoid[{0.310878, 0.371, 0.0264711}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.228474, -0.216244, 0.0112636}}],
-     Ellipsoid[{-0.228474, -0.216244, 0.0112636}, {0.05, 0.06, 0.008}]], 
+        0, 0, 0.008}}, {-0.180606, -0.145028, 0.00732104}}],
+     Ellipsoid[{-0.180606, -0.145028, 0.00732104}, {0.05, 0.06, 0.008}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
+       0.155643, 0.203602, 0.00631319}}],
+     Ellipsoid[{0.155643, 0.203602, 0.00631319}, {0.05, 0.06, 0.008}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
+       0.793615, 1.29231, 0.148071}}],
+     Ellipsoid[{0.793615, 1.29231, 0.148071}, {0.05, 0.06, 0.008}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
+       0.358014, 0.563329, 0.0284876}}],
+     Ellipsoid[{0.358014, 0.563329, 0.0284876}, {0.05, 0.06, 0.008}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
+       0.670666, 1.05806, 0.108839}}],
+     Ellipsoid[{0.670666, 1.05806, 0.108839}, {0.05, 0.06, 0.008}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
+       0.0407832, 0.0334305, 0.000378185}}],
+     Ellipsoid[{0.0407832, 0.0334305, 0.000378185}, {0.05, 0.06, 0.008}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
+       0.107055, 0.107518, 0.00292592}}],
+     Ellipsoid[{0.107055, 0.107518, 0.00292592}, {0.05, 0.06, 0.008}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
+       0.501005, 0.726109, 0.0650401}}],
+     Ellipsoid[{0.501005, 0.726109, 0.0650401}, {0.05, 0.06, 0.008}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
+       0.37619, 0.459474, 0.0391577}}],
+     Ellipsoid[{0.37619, 0.459474, 0.0391577}, {0.05, 0.06, 0.008}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
+       0.814027, 1.33946, 0.154106}}],
+     Ellipsoid[{0.814027, 1.33946, 0.154106}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.464614, -0.35044, 0.0499905}}],
-     Ellipsoid[{-0.464614, -0.35044, 0.0499905}, {0.05, 0.06, 0.008}]], 
+        0, 0, 0.008}}, {-0.0236587, -0.0203863, 0.000147783}}],
+     Ellipsoid[{-0.0236587, -0.0203863, 0.000147783}, {0.05, 0.06, 0.008}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
+       0.142934, 0.172827, 0.00540725}}],
+     Ellipsoid[{0.142934, 0.172827, 0.00540725}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.471644, -0.387405, 0.047945}}],
-     Ellipsoid[{-0.471644, -0.387405, 0.047945}, {0.05, 0.06, 0.008}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.115027, 0.118742, 0.00415412}}],
-     Ellipsoid[{0.115027, 0.118742, 0.00415412}, {0.05, 0.06, 0.008}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.292548, 0.416289, 0.0213329}}],
-     Ellipsoid[{0.292548, 0.416289, 0.0213329}, {0.05, 0.06, 0.008}]], 
+        0, 0, 0.008}}, {-0.349156, -0.280568, 0.0263097}}],
+     Ellipsoid[{-0.349156, -0.280568, 0.0263097}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.100266, -0.0748654, 0.0044117}}],
-     Ellipsoid[{-0.100266, -0.0748654, 0.0044117}, {0.05, 0.06, 0.008}]], 
+        0, 0, 0.008}}, {-0.37606, -0.307326, 0.0306357}}],
+     Ellipsoid[{-0.37606, -0.307326, 0.0306357}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.0009368, 0.00016596, 0.00060952}}],
-     Ellipsoid[{0.0009368, 0.00016596, 0.00060952}, {0.05, 0.06, 0.008}]], 
+       0.202496, 0.211951, 0.0107714}}],
+     Ellipsoid[{0.202496, 0.211951, 0.0107714}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.602798, 0.929769, 0.0895414}}],
-     Ellipsoid[{0.602798, 0.929769, 0.0895414}, {0.05, 0.06, 0.008}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.693446, 1.13687, 0.108301}}],
-     Ellipsoid[{0.693446, 1.13687, 0.108301}, {0.05, 0.06, 0.008}]], 
+       0.23188, 0.259872, 0.0143991}}],
+     Ellipsoid[{0.23188, 0.259872, 0.0143991}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.0801801, -0.0599201, 0.00353312}}],
-     Ellipsoid[{-0.0801801, -0.0599201, 0.00353312}, {0.05, 0.06, 0.008}]], 
+        0, 0, 0.008}}, {-0.0534472, -0.0516595, 0.000690368}}],
+     Ellipsoid[{-0.0534472, -0.0516595, 0.000690368}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.215431, 0.317318, 0.00935794}}],
-     Ellipsoid[{0.215431, 0.317318, 0.00935794}, {0.05, 0.06, 0.008}]], 
+       0.750969, 1.20001, 0.136956}}],
+     Ellipsoid[{0.750969, 1.20001, 0.136956}, {0.05, 0.06, 0.008}]], 
+    InterpretationBox[
+     GeometricTransformation3DBox[
+      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
+       0.271497, 0.362475, 0.019261}}],
+     Ellipsoid[{0.271497, 0.362475, 0.019261}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 
        0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.284711, -0.211256, 0.0172395}}],
-     Ellipsoid[{-0.284711, -0.211256, 0.0172395}, {0.05, 0.06, 0.008}]], 
+        0, 0, 0.008}}, {-0.157005, -0.119751, 0.00545425}}],
+     Ellipsoid[{-0.157005, -0.119751, 0.00545425}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.264659, 0.304455, 0.0197303}}],
-     Ellipsoid[{0.264659, 0.304455, 0.0197303}, {0.05, 0.06, 0.008}]], 
+       0.808089, 1.31919, 0.152615}}],
+     Ellipsoid[{0.808089, 1.31919, 0.152615}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.71854, 1.15497, 0.122536}}],
-     Ellipsoid[{0.71854, 1.15497, 0.122536}, {0.05, 0.06, 0.008}]], 
+       0.140248, 0.137187, 0.00499821}}],
+     Ellipsoid[{0.140248, 0.137187, 0.00499821}, {0.05, 0.06, 0.008}]], 
     InterpretationBox[
      GeometricTransformation3DBox[
       SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.0121757, 0.010252, 0.00024308}}],
-     Ellipsoid[{0.0121757, 0.010252, 0.00024308}, {0.05, 0.06, 0.008}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.0717718, 0.0676248, 0.00206776}}],
-     Ellipsoid[{0.0717718, 0.0676248, 0.00206776}, {0.05, 0.06, 0.008}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 
-       0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.597098, -0.451616, 0.0695087}}],
-     Ellipsoid[{-0.597098, -0.451616, 0.0695087}, {0.05, 0.06, 0.008}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.475623, 0.739167, 0.0487159}}],
-     Ellipsoid[{0.475623, 0.739167, 0.0487159}, {0.05, 0.06, 0.008}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 
-       0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.382355, -0.311082, 0.0312129}}],
-     Ellipsoid[{-0.382355, -0.311082, 0.0312129}, {0.05, 0.06, 0.008}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 
-       0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.265955, -0.231577, 0.0197334}}],
-     Ellipsoid[{-0.265955, -0.231577, 0.0197334}, {0.05, 0.06, 0.008}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 
-       0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.0897064, -0.0868051, 0.00797142}}],
-     Ellipsoid[{-0.0897064, -0.0868051, 0.00797142}, {0.05, 0.06, 0.008}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.049709, 0.0635558, -0.0012989}}],
-     Ellipsoid[{0.049709, 0.0635558, -0.0012989}, {0.05, 0.06, 0.008}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 
-       0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {
-        0, 0, 0.008}}, {-0.464367, -0.33663, 0.0461241}}],
-     Ellipsoid[{-0.464367, -0.33663, 0.0461241}, {0.05, 0.06, 0.008}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.0332367, 0.0390948, 0.00422916}}],
-     Ellipsoid[{0.0332367, 0.0390948, 0.00422916}, {0.05, 0.06, 0.008}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.117599, 0.153186, 0.00583688}}],
-     Ellipsoid[{0.117599, 0.153186, 0.00583688}, {0.05, 0.06, 0.008}]], 
-    InterpretationBox[
-     GeometricTransformation3DBox[
-      SphereBox[{0, 0, 0}], {{{0.05, 0, 0}, {0, 0.06, 0}, {0, 0, 0.008}}, {
-       0.0197989, 0.0284369, 0.003606}}],
-     Ellipsoid[{0.0197989, 0.0284369, 0.003606}, {0.05, 0.06, 0.008}]]}},
+       0.552981, 0.864926, 0.0722347}}],
+     Ellipsoid[{0.552981, 0.864926, 0.0722347}, {0.05, 0.06, 0.008}]]}},
   Axes->True,
   AxesLabel->{
     FormBox["\"b\"", TraditionalForm], 
@@ -1562,16 +2054,18 @@ kiRJkiRJkn8e4JVAzg==
       FormBox[
        RowBox[{"-", "0.15`"}], TraditionalForm]}, {0, 
       FormBox["0", TraditionalForm]}, {0.15, 
-      FormBox["0.15`", TraditionalForm]}}}]], "Output",
- CellChangeTimes->{{3.747624168385757*^9, 3.747624187168351*^9}, 
-   3.7476675869041567`*^9, {3.747667639615643*^9, 3.7476676672451267`*^9}, 
-   3.747668603651094*^9, 3.748793297029697*^9},
- CellLabel->"Out[76]=",ExpressionUUID->"1aec65d6-4ad5-46f0-b27f-465beadb50c8"]
+      FormBox["0.15`", TraditionalForm]}}},
+  ViewPoint->{2.1172823366241946`, -2.369824184857232, 1.1623462650539824`},
+  ViewVertical->{0.15852968694956462`, -0.23153699068615533`, 
+   0.9598223587204417}]], "Output",
+ CellLabel->
+  "Out[878]=",ExpressionUUID->"9a78b250-9a9c-4dce-b33e-10fe3036fac2"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{808, 931},
-WindowMargins->{{167, Automatic}, {Automatic, 0}},
+WindowSize->{1015, 975},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
 2018)",
 StyleDefinitions->"Default.nb"
@@ -1588,41 +2082,44 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 162, 3, 65, "Subchapter",ExpressionUUID->"7062184a-07a0-473a-986d-96642276eaeb"],
-Cell[745, 27, 268, 5, 30, "Input",ExpressionUUID->"b13c46bb-36a7-4662-b6b2-ce2580346b00"],
-Cell[1016, 34, 826, 21, 136, "Input",ExpressionUUID->"45b5ba80-64eb-4acd-b426-8a09b3e784a9"],
-Cell[1845, 57, 1055, 23, 115, "Input",ExpressionUUID->"3d990f12-31d3-4ef5-9bc6-86e89cfa167c"],
-Cell[2903, 82, 449, 14, 30, "Input",ExpressionUUID->"47c3b1fd-c88b-41a8-8583-5d17534012f8"],
-Cell[3355, 98, 1547, 41, 94, "Input",ExpressionUUID->"87e85309-fe94-4617-8864-ec06cbaea064"],
-Cell[4905, 141, 4254, 103, 283, "Input",ExpressionUUID->"bbb9c4e1-28bc-4f66-9d56-128fb5d7ffa8"],
+Cell[580, 22, 90, 0, 98, "Title",ExpressionUUID->"c4622565-4f0c-457a-82e6-a34fa3670010"],
 Cell[CellGroupData[{
-Cell[9184, 248, 928, 22, 115, "Input",ExpressionUUID->"9819a925-69a8-4ad6-9f0d-06e247241906"],
-Cell[10115, 272, 23387, 474, 320, "Output",ExpressionUUID->"0de173ee-22a7-4874-a4bf-0e6dd84487f3"]
+Cell[695, 26, 84, 0, 65, "Subchapter",ExpressionUUID->"7062184a-07a0-473a-986d-96642276eaeb"],
+Cell[782, 28, 272, 6, 30, "Input",ExpressionUUID->"b13c46bb-36a7-4662-b6b2-ce2580346b00"],
+Cell[1057, 36, 830, 22, 94, "Input",ExpressionUUID->"45b5ba80-64eb-4acd-b426-8a09b3e784a9"],
+Cell[1890, 60, 1059, 24, 115, "Input",ExpressionUUID->"3d990f12-31d3-4ef5-9bc6-86e89cfa167c"],
+Cell[2952, 86, 453, 15, 30, "Input",ExpressionUUID->"47c3b1fd-c88b-41a8-8583-5d17534012f8"],
+Cell[3408, 103, 1551, 42, 52, "Input",ExpressionUUID->"87e85309-fe94-4617-8864-ec06cbaea064"],
+Cell[4962, 147, 4258, 104, 262, "Input",ExpressionUUID->"bbb9c4e1-28bc-4f66-9d56-128fb5d7ffa8"],
+Cell[CellGroupData[{
+Cell[9245, 255, 932, 23, 115, "Input",ExpressionUUID->"9819a925-69a8-4ad6-9f0d-06e247241906"],
+Cell[10180, 280, 54076, 971, 287, 23374, 467, "CachedBoxData", "BoxData", "Output",ExpressionUUID->"ab8dd670-68eb-4984-86d3-4fd7e55bebb6"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[33551, 752, 160, 3, 65, "Subchapter",ExpressionUUID->"4a5e78ac-c337-4018-afec-7e6564f2fe5c"],
-Cell[33714, 757, 268, 5, 30, "Input",ExpressionUUID->"b5bba6e0-ab2a-4079-bc0e-c2304ebe4510"],
-Cell[33985, 764, 1079, 25, 136, "Input",ExpressionUUID->"7bbbe1e5-08b6-41da-bffb-67d03b2fa1cc"],
-Cell[35067, 791, 1254, 26, 115, "Input",ExpressionUUID->"9456d6d2-f271-43a6-b9f1-48fbe0d05ff3"],
-Cell[36324, 819, 445, 14, 30, "Input",ExpressionUUID->"a530b07d-757d-47fb-bc58-e047824c9541"],
-Cell[36772, 835, 1423, 39, 94, "Input",ExpressionUUID->"1d2de6d2-6e17-4651-9d9b-a6c43e6c7e3a"],
+Cell[64305, 1257, 83, 0, 65, "Subchapter",ExpressionUUID->"4a5e78ac-c337-4018-afec-7e6564f2fe5c"],
+Cell[64391, 1259, 272, 6, 30, "Input",ExpressionUUID->"b5bba6e0-ab2a-4079-bc0e-c2304ebe4510"],
+Cell[64666, 1267, 828, 22, 94, "Input",ExpressionUUID->"7bbbe1e5-08b6-41da-bffb-67d03b2fa1cc"],
+Cell[65497, 1291, 1258, 27, 115, "Input",ExpressionUUID->"9456d6d2-f271-43a6-b9f1-48fbe0d05ff3"],
+Cell[66758, 1320, 449, 15, 30, "Input",ExpressionUUID->"a530b07d-757d-47fb-bc58-e047824c9541"],
+Cell[67210, 1337, 1427, 40, 52, "Input",ExpressionUUID->"1d2de6d2-6e17-4651-9d9b-a6c43e6c7e3a"],
 Cell[CellGroupData[{
-Cell[38220, 878, 457, 12, 30, "Input",ExpressionUUID->"4d3eac3e-d18e-4b1c-ab00-2e654a600458"],
-Cell[38680, 892, 419, 8, 34, "Output",ExpressionUUID->"68b008b0-b90d-4781-8f1a-72a6bd855917"]
+Cell[68662, 1381, 461, 13, 30, "Input",ExpressionUUID->"4d3eac3e-d18e-4b1c-ab00-2e654a600458"],
+Cell[69126, 1396, 191, 5, 34, "Output",ExpressionUUID->"d5ae7aa3-3691-45a0-ae9f-a20c842031dc"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[39136, 905, 455, 12, 30, "Input",ExpressionUUID->"c0b2541e-482d-43d3-86cb-67fbe1df6bce"],
-Cell[39594, 919, 388, 7, 34, "Output",ExpressionUUID->"ac0c3a31-ab6b-44af-bb77-42d5b8bc890c"]
+Cell[69354, 1406, 459, 13, 30, "Input",ExpressionUUID->"c0b2541e-482d-43d3-86cb-67fbe1df6bce"],
+Cell[69816, 1421, 190, 5, 34, "Output",ExpressionUUID->"05fb406f-8c41-447a-8d83-12502e3daad0"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[40019, 931, 457, 12, 30, "Input",ExpressionUUID->"14cb596c-accb-4857-bf23-a3e9c10c00e7"],
-Cell[40479, 945, 369, 7, 34, "Output",ExpressionUUID->"0faf6392-92a4-4bbe-b278-0c4ad3790b2e"]
+Cell[70043, 1431, 461, 13, 30, "Input",ExpressionUUID->"14cb596c-accb-4857-bf23-a3e9c10c00e7"],
+Cell[70507, 1446, 175, 4, 34, "Output",ExpressionUUID->"7df5abd5-d2c1-472f-9117-ede9f7c1a3e1"]
 }, Open  ]],
-Cell[40863, 955, 4781, 110, 283, "Input",ExpressionUUID->"031325fe-1383-4324-874f-8be8fd98afdf"],
+Cell[70697, 1453, 4785, 111, 262, "Input",ExpressionUUID->"031325fe-1383-4324-874f-8be8fd98afdf"],
 Cell[CellGroupData[{
-Cell[45669, 1069, 1140, 25, 115, "Input",ExpressionUUID->"3caedf0c-88af-4aa0-89dd-1542043bce2c"],
-Cell[46812, 1096, 23461, 472, 318, "Output",ExpressionUUID->"1aec65d6-4ad5-46f0-b27f-465beadb50c8"]
+Cell[75507, 1568, 1144, 26, 115, "Input",ExpressionUUID->"3caedf0c-88af-4aa0-89dd-1542043bce2c"],
+Cell[76654, 1596, 23322, 465, 246, "Output",ExpressionUUID->"9a78b250-9a9c-4dce-b33e-10fe3036fac2"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }

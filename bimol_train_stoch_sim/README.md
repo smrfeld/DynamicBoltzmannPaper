@@ -6,8 +6,7 @@ For the reaction `A + A -> 0`.
 
 Run the included Python scripts
 ```
-python create_data_dirs_stoch_sim.py
-python create_data_dirs_ic.py
+python create_data_dirs.py
 ```
 
 ## Running
@@ -30,6 +29,8 @@ cd ../bin
 
 They can be visualized with the `visualize_lattice` notebook in the `mathematica` directory.
 
+The first moments in the data can be visualized using the `moments` notebook.
+
 ### Learning initial conditions
 
 From the build directory:
@@ -39,8 +40,12 @@ cd ../bin
 ./learn_ic
 ```
 
-The progress can be monitored with the `learn_ic` notebook in the `mathematica` directory.
+The progress can be monitored with the `monitor_progress_learn_ic` notebook in the `mathematica` directory.
+
+The final learned points can be visualized using the `ic_learned` notebook.
 
 ## Paper figures
 
-Can be generated using the `figures` notebook in the `mathematica` directory.
+Can be generated using the `figures` notebook in the `mathematica` directory. In particular:
+* `visualize_lattice` generates two example lattices.
+* `moments` visualizes the first moment of the data.
