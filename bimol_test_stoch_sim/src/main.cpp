@@ -95,7 +95,7 @@ int main() {
 	********************/
 
 	// n samples per IC
-	int n_samples_per_IC = 100;
+	int n_samples_per_IC = 50;
 
 	// Go through all
 	for (int i=0; i<nIC; i++)
@@ -124,7 +124,7 @@ int main() {
 			sim.add_bi_rxn("ann", 0.01, "A","A");
 
 			// Populate
-			sim.populate_lattice(h_dict, j_dict, k_dict, n_sampling_cd);
+			sim.populate_lattice_1d(h_dict, j_dict, k_dict, n_sampling_cd);
 
 			// Run
 			bool verbose = false;
