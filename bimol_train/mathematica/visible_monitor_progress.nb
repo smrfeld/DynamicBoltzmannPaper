@@ -1,0 +1,273 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10376,        265]
+NotebookOptionsPosition[      9628,        243]
+NotebookOutlinePosition[      9985,        259]
+CellTagsIndexPosition[      9942,        256]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Ixn params", "Title",
+ CellChangeTimes->{{3.746820513019732*^9, 3.746820514214099*^9}, {
+  3.7468838577347813`*^9, 
+  3.746883859373808*^9}},ExpressionUUID->"3ce573fc-6927-465e-90ca-\
+dbe37f307e21"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.746820515098518*^9, 3.746820527206663*^9}},
+ CellLabel->
+  "In[1504]:=",ExpressionUUID->"75cdb08d-e375-479f-a055-38fa7377bf0d"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{"FileExistsQ", "[", 
+      RowBox[{"\"\<../data_learned_visible/ixn_params/hA_\>\"", "<>", 
+       RowBox[{"IntegerString", "[", 
+        RowBox[{"iIC", ",", "10", ",", "3"}], "]"}], "<>", "\"\<_\>\"", "<>", 
+       
+       RowBox[{"IntegerString", "[", 
+        RowBox[{"iOpt", ",", "10", ",", "4"}], "]"}], "<>", "\"\<.txt\>\""}], 
+      "]"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"datahA", "=", 
+       RowBox[{"Import", "[", 
+        RowBox[{
+         RowBox[{"\"\<../data_learned_visible/ixn_params/hA_\>\"", "<>", 
+          RowBox[{"IntegerString", "[", 
+           RowBox[{"iIC", ",", "10", ",", "3"}], "]"}], "<>", "\"\<_\>\"", "<>", 
+          RowBox[{"IntegerString", "[", 
+           RowBox[{"iOpt", ",", "10", ",", "4"}], "]"}], "<>", 
+          "\"\<.txt\>\""}], ",", "\"\<Table\>\""}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"datajAA", "=", 
+       RowBox[{"Import", "[", 
+        RowBox[{
+         RowBox[{"\"\<../data_learned_visible/ixn_params/jAA_\>\"", "<>", 
+          RowBox[{"IntegerString", "[", 
+           RowBox[{"iIC", ",", "10", ",", "3"}], "]"}], "<>", "\"\<_\>\"", "<>", 
+          RowBox[{"IntegerString", "[", 
+           RowBox[{"iOpt", ",", "10", ",", "4"}], "]"}], "<>", 
+          "\"\<.txt\>\""}], ",", "\"\<Table\>\""}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"datakAAA", "=", 
+       RowBox[{"Import", "[", 
+        RowBox[{
+         RowBox[{"\"\<../data_learned_visible/ixn_params/kAAA_\>\"", "<>", 
+          RowBox[{"IntegerString", "[", 
+           RowBox[{"iIC", ",", "10", ",", "3"}], "]"}], "<>", "\"\<_\>\"", "<>", 
+          RowBox[{"IntegerString", "[", 
+           RowBox[{"iOpt", ",", "10", ",", "4"}], "]"}], "<>", 
+          "\"\<.txt\>\""}], ",", "\"\<Table\>\""}], "]"}]}], ";", 
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{"Row", "[", 
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"ListLinePlot", "[", 
+          RowBox[{"datahA", ",", 
+           RowBox[{"PlotRange", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "1.5"}], ",", "1.0"}], "}"}]}], ",", 
+           RowBox[{"ImageSize", "\[Rule]", "300"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"ListLinePlot", "[", 
+          RowBox[{"datajAA", ",", 
+           RowBox[{"PlotRange", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "1.0"}], ",", "2.0"}], "}"}]}], ",", 
+           RowBox[{"ImageSize", "\[Rule]", "300"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"ListLinePlot", "[", 
+          RowBox[{"datakAAA", ",", 
+           RowBox[{"PlotRange", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "1"}], ",", "10"}], "}"}]}], ",", 
+           RowBox[{"ImageSize", "\[Rule]", "300"}]}], "]"}]}], 
+        "\[IndentingNewLine]", "}"}], "]"}]}]}], "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", ",", 
+   RowBox[{"{", 
+    RowBox[{"iIC", ",", "1", ",", "20", ",", "1"}], "}"}], 
+   "\[IndentingNewLine]", ",", 
+   RowBox[{"{", 
+    RowBox[{"iOpt", ",", "1", ",", "190", ",", "1"}], "}"}]}], "]"}]], "Input",\
+
+ CellLabel->
+  "In[1509]:=",ExpressionUUID->"fcb9b648-7c4f-45c6-bb3c-f1cc933a905a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Moments", "Title",ExpressionUUID->"a495e67d-01d9-49ac-a1d7-ddaa40dd14dc"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"SetDirectory", "[", 
+     RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"FileExistsQ", "[", 
+       RowBox[{"\"\<../data_learned_visible/moments/hA_\>\"", "<>", 
+        RowBox[{"IntegerString", "[", 
+         RowBox[{"iIC", ",", "10", ",", "3"}], "]"}], "<>", "\"\<_\>\"", "<>", 
+        RowBox[{"IntegerString", "[", 
+         RowBox[{"iOpt", ",", "10", ",", "4"}], "]"}], "<>", "\"\<.txt\>\""}],
+        "]"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"datahA", "=", 
+        RowBox[{"Import", "[", 
+         RowBox[{
+          RowBox[{"\"\<../data_learned_visible/moments/hA_\>\"", "<>", 
+           RowBox[{"IntegerString", "[", 
+            RowBox[{"iIC", ",", "10", ",", "3"}], "]"}], "<>", "\"\<_\>\"", "<>", 
+           RowBox[{"IntegerString", "[", 
+            RowBox[{"iOpt", ",", "10", ",", "4"}], "]"}], "<>", 
+           "\"\<.txt\>\""}], ",", "\"\<Table\>\""}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"datajAA", "=", 
+        RowBox[{"Import", "[", 
+         RowBox[{
+          RowBox[{"\"\<../data_learned_visible/moments/jAA_\>\"", "<>", 
+           RowBox[{"IntegerString", "[", 
+            RowBox[{"iIC", ",", "10", ",", "3"}], "]"}], "<>", "\"\<_\>\"", "<>", 
+           RowBox[{"IntegerString", "[", 
+            RowBox[{"iOpt", ",", "10", ",", "4"}], "]"}], "<>", 
+           "\"\<.txt\>\""}], ",", "\"\<Table\>\""}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"datakAAA", "=", 
+        RowBox[{"Import", "[", 
+         RowBox[{
+          RowBox[{"\"\<../data_learned_visible/moments/kAAA_\>\"", "<>", 
+           RowBox[{"IntegerString", "[", 
+            RowBox[{"iIC", ",", "10", ",", "3"}], "]"}], "<>", "\"\<_\>\"", "<>", 
+           RowBox[{"IntegerString", "[", 
+            RowBox[{"iOpt", ",", "10", ",", "4"}], "]"}], "<>", 
+           "\"\<.txt\>\""}], ",", "\"\<Table\>\""}], "]"}]}], ";", 
+       "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{"Row", "[", 
+        RowBox[{"{", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"ListLinePlot", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"datahA", "[", 
+               RowBox[{"[", 
+                RowBox[{";;", ",", 
+                 RowBox[{"{", 
+                  RowBox[{"1", ",", "2"}], "}"}]}], "]"}], "]"}], ",", 
+              RowBox[{"datahA", "[", 
+               RowBox[{"[", 
+                RowBox[{";;", ",", 
+                 RowBox[{"{", 
+                  RowBox[{"1", ",", "3"}], "}"}]}], "]"}], "]"}]}], "}"}], 
+            ",", 
+            RowBox[{"PlotRange", "\[Rule]", 
+             RowBox[{"{", 
+              RowBox[{"0", ",", "1000"}], "}"}]}], ",", 
+            RowBox[{"ImageSize", "\[Rule]", "300"}]}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"ListLinePlot", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"datajAA", "[", 
+               RowBox[{"[", 
+                RowBox[{";;", ",", 
+                 RowBox[{"{", 
+                  RowBox[{"1", ",", "2"}], "}"}]}], "]"}], "]"}], ",", 
+              RowBox[{"datajAA", "[", 
+               RowBox[{"[", 
+                RowBox[{";;", ",", 
+                 RowBox[{"{", 
+                  RowBox[{"1", ",", "3"}], "}"}]}], "]"}], "]"}]}], "}"}], 
+            ",", 
+            RowBox[{"PlotRange", "\[Rule]", 
+             RowBox[{"{", 
+              RowBox[{"0", ",", "2000"}], "}"}]}], ",", 
+            RowBox[{"ImageSize", "\[Rule]", "300"}]}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"ListLinePlot", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"datakAAA", "[", 
+               RowBox[{"[", 
+                RowBox[{";;", ",", 
+                 RowBox[{"{", 
+                  RowBox[{"1", ",", "2"}], "}"}]}], "]"}], "]"}], ",", 
+              RowBox[{"datakAAA", "[", 
+               RowBox[{"[", 
+                RowBox[{";;", ",", 
+                 RowBox[{"{", 
+                  RowBox[{"1", ",", "3"}], "}"}]}], "]"}], "]"}]}], "}"}], 
+            ",", 
+            RowBox[{"PlotRange", "\[Rule]", 
+             RowBox[{"{", 
+              RowBox[{"0", ",", "1000"}], "}"}]}], ",", 
+            RowBox[{"ImageSize", "\[Rule]", "300"}]}], "]"}]}], 
+         "\[IndentingNewLine]", "}"}], "]"}]}]}], "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", ",", 
+   RowBox[{"{", 
+    RowBox[{"iIC", ",", "1", ",", "20", ",", "1"}], "}"}], 
+   "\[IndentingNewLine]", ",", 
+   RowBox[{"{", 
+    RowBox[{"iOpt", ",", "1", ",", "190", ",", "1"}], "}"}]}], "]"}]], "Input",\
+
+ CellLabel->
+  "In[1515]:=",ExpressionUUID->"92e1fa1b-bde6-4b14-b1c7-40a2d797b51a"]
+}, Open  ]]
+},
+WindowSize->{1095, 911},
+WindowMargins->{{Automatic, 457}, {Automatic, 242}},
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 204, 4, 98, "Title",ExpressionUUID->"3ce573fc-6927-465e-90ca-dbe37f307e21"],
+Cell[787, 28, 273, 6, 30, "Input",ExpressionUUID->"75cdb08d-e375-479f-a055-38fa7377bf0d"],
+Cell[1063, 36, 3468, 79, 430, "Input",ExpressionUUID->"fcb9b648-7c4f-45c6-bb3c-f1cc933a905a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4568, 120, 79, 0, 98, "Title",ExpressionUUID->"a495e67d-01d9-49ac-a1d7-ddaa40dd14dc"],
+Cell[4650, 122, 4962, 118, 451, "Input",ExpressionUUID->"92e1fa1b-bde6-4b14-b1c7-40a2d797b51a"]
+}, Open  ]]
+}
+]
+*)
+
