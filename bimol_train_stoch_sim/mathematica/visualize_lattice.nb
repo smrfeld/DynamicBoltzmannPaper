@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     26500,        673]
+NotebookDataLength[     26501,        673]
 NotebookOptionsPosition[     22883,        606]
-NotebookOutlinePosition[     23240,        622]
-CellTagsIndexPosition[     23197,        619]
+NotebookOutlinePosition[     23241,        622]
+CellTagsIndexPosition[     23198,        619]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -605,7 +605,7 @@ Cell[BoxData["\<\"../figures/lattice_ann_hidden.pdf\"\>"], "Output",
 }, Open  ]]
 },
 WindowSize->{1195, 748},
-WindowMargins->{{588, Automatic}, {Automatic, 274}},
+WindowMargins->{{Automatic, -195}, {-50, Automatic}},
 FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
 2018)",
 StyleDefinitions->"Default.nb"

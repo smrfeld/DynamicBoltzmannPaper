@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     30583,        606]
-NotebookOptionsPosition[     29920,        585]
-NotebookOutlinePosition[     30276,        601]
-CellTagsIndexPosition[     30233,        598]
+NotebookDataLength[     30527,        608]
+NotebookOptionsPosition[     29863,        587]
+NotebookOutlinePosition[     30219,        603]
+CellTagsIndexPosition[     30176,        600]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -106,7 +106,7 @@ Cell[BoxData[
   3.7486500248061743`*^9, 3.748650088106028*^9}, {3.748650174570174*^9, 
   3.748650327399301*^9}},
  CellLabel->
-  "In[886]:=",ExpressionUUID->"c4c15872-84d9-4b5b-b7fa-92cceecd476c"],
+  "In[1030]:=",ExpressionUUID->"c4c15872-84d9-4b5b-b7fa-92cceecd476c"],
 
 Cell[BoxData[
  GraphicsBox[{{{}, {}, 
@@ -189,7 +189,7 @@ xbT3dH3SqLpeDJvQjx9MZ9Br/frUt+pd6K6aZnqKqza3TZ2N5VNS5BzTWh/j
 096q9xTuc7JeYLr5RklBsXqFU+IOhd9M+wZ6FsWox4hyzzD/A2n/H5/2/w/i
 wPmC
        "]]},
-     Annotation[#, "Charting`Private`Tag$1472909#1"]& ], 
+     Annotation[#, "Charting`Private`Tag$1056218#1"]& ], 
     TagBox[
      {GrayLevel[0], AbsoluteThickness[1.6], Opacity[1.], 
       Dashing[{Small, Small}], CapForm["Butt"], LineBox[CompressedData["
@@ -308,7 +308,7 @@ emsb33mVF2K76c2fXQTfdfLd7lD4Xxs950Lll8Aevrmxn0Jb6JFrdML39vNt
 FxRgJ94Z53ujV13hW/q3jC1uR6f4Pnqu+GEcPc8tQWvt9P/r9wrH+NMfKCz6
 OTv7f5Nfgd7/ALBO6XQ=
        "]]},
-     Annotation[#, "Charting`Private`Tag$1472909#2"]& ], 
+     Annotation[#, "Charting`Private`Tag$1056218#2"]& ], 
     TagBox[
      {GrayLevel[0], AbsoluteThickness[1.6], Opacity[1.], Dashing[{0, Small}], 
       CapForm["Butt"], LineBox[CompressedData["
@@ -430,7 +430,7 @@ cJIT8qGlWWybwf5Rm8lsd0Qyx91H6r9h63w74+dphVYs68mO/4lNK0FdvSZo
 tELdzfEXdlT1lFfAUfTKLWuX0l/s/wQF71xRRcniPN+XlrA5OIj6cUvK/4G2
 irg=
        "]]},
-     Annotation[#, "Charting`Private`Tag$1472909#3"]& ], 
+     Annotation[#, "Charting`Private`Tag$1056218#3"]& ], 
     TagBox[
      {GrayLevel[0], AbsoluteThickness[1.6], Opacity[1.], 
       Dashing[{0, Small, Small, Small}], CapForm["Butt"], 
@@ -513,7 +513,7 @@ ugf6h151UT5HT7QQp3J4ZbXqsSHKxg84RCap3FnkagYyKcsYu/VW/8md/+Zt
 U5Q5lrWlR1M5cX8fZ/mLcl+Jhqsddc6nJlxWLVB+4Zq2U5Hq8wcN471LlB+I
 rZ7+M84s/XkI/g9IADTq
        "]]},
-     Annotation[#, "Charting`Private`Tag$1472909#4"]& ]}, {}, {}},
+     Annotation[#, "Charting`Private`Tag$1056218#4"]& ]}, {}, {}},
   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
   Axes->{False, False},
   AxesLabel->{None, None},
@@ -557,11 +557,8 @@ rZ7+M84s/XkI/g9IADTq
      Scaled[0.02], 
      Scaled[0.02]}, {0, 0}},
   Ticks->{Automatic, Automatic}]], "Output",
- CellChangeTimes->{{3.748649965400194*^9, 3.7486499894440327`*^9}, {
-  3.748650042085211*^9, 3.748650088376471*^9}, {3.74865018187773*^9, 
-  3.748650327857109*^9}},
  CellLabel->
-  "Out[886]=",ExpressionUUID->"9d3fdd05-cc21-490b-85f6-ac88a31bc6e9"]
+  "Out[1030]=",ExpressionUUID->"6be0e01e-83be-4bbb-97ce-9984314c4fbc"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -571,16 +568,21 @@ Cell[BoxData[{
   RowBox[{"SetDirectory", "[", 
    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], 
   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{"!", 
+     RowBox[{"DirectoryQ", "[", "\"\<./figures\>\"", "]"}]}], ",", 
+    RowBox[{"CreateDirectory", "[", "\"\<./figures\>\"", "]"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{"Export", "[", 
-  RowBox[{"\"\<../figures/hermite.pdf\>\"", ",", "plt"}], "]"}]}], "Input",
- CellChangeTimes->{{3.74865008909438*^9, 3.748650106533889*^9}},
+  RowBox[{"\"\<./figures/hermite.pdf\>\"", ",", "plt"}], "]"}]}], "Input",
  CellLabel->
-  "In[887]:=",ExpressionUUID->"a82f46e7-3d78-419a-85cb-6e62873ef060"],
+  "In[1031]:=",ExpressionUUID->"a82f46e7-3d78-419a-85cb-6e62873ef060"],
 
-Cell[BoxData["\<\"../figures/hermite.pdf\"\>"], "Output",
- CellChangeTimes->{3.748650108022009*^9, 3.7486503313249826`*^9},
+Cell[BoxData["\<\"./figures/hermite.pdf\"\>"], "Output",
  CellLabel->
-  "Out[888]=",ExpressionUUID->"9c2dd7c6-24c0-4400-8125-b18f596fd6a4"]
+  "Out[1033]=",ExpressionUUID->"ba2c3b0d-60cf-490a-989e-421ceb4f77da"]
 }, Open  ]]
 },
 WindowSize->{808, 911},
@@ -601,12 +603,12 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 2865, 86, 119, "Input",ExpressionUUID->"c4c15872-84d9-4b5b-b7fa-92cceecd476c"],
-Cell[3448, 110, 25820, 453, 312, "Output",ExpressionUUID->"9d3fdd05-cc21-490b-85f6-ac88a31bc6e9"]
+Cell[580, 22, 2866, 86, 119, "Input",ExpressionUUID->"c4c15872-84d9-4b5b-b7fa-92cceecd476c"],
+Cell[3449, 110, 25656, 450, 312, "Output",ExpressionUUID->"6be0e01e-83be-4bbb-97ce-9984314c4fbc"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[29305, 568, 390, 9, 52, "Input",ExpressionUUID->"a82f46e7-3d78-419a-85cb-6e62873ef060"],
-Cell[29698, 579, 206, 3, 34, "Output",ExpressionUUID->"9c2dd7c6-24c0-4400-8125-b18f596fd6a4"]
+Cell[29142, 565, 562, 15, 73, "Input",ExpressionUUID->"a82f46e7-3d78-419a-85cb-6e62873ef060"],
+Cell[29707, 582, 140, 2, 34, "Output",ExpressionUUID->"ba2c3b0d-60cf-490a-989e-421ceb4f77da"]
 }, Open  ]]
 }
 ]

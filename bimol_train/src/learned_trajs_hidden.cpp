@@ -79,9 +79,9 @@ int main() {
     cout << "--- Making RHS diff eq ---" << endl;
     
     // Domain
-    double spacing_hA = 0.6;
+    double spacing_hA = 0.5;
     double spacing_wAX = 0.5;
-    double spacing_bX = 0.07;
+    double spacing_bX = 0.05;
     double center = 0.0;
     Domain1D* domain_1d_hA = new Domain1D(ixn_hA,spacing_hA,center);
     Domain1D* domain_1d_wAX = new Domain1D(ixn_wAX,spacing_wAX,center);
@@ -156,15 +156,16 @@ int main() {
     // MARK: - Read in
     // ***************
     
-	rhs_hA->read_from_file("../data_learned_hidden/diff_eq_rhs/hA_0190.txt");
-	rhs_wAX->read_from_file("../data_learned_hidden/diff_eq_rhs/wAX_0190.txt");
-	rhs_bX->read_from_file("../data_learned_hidden/diff_eq_rhs/bX_0190.txt");
+    int idx_read = 190;
+	rhs_hA->read_from_file("../data_learned_hidden/diff_eq_rhs/hA_"+pad_str(idx_read,4)+".txt");
+	rhs_wAX->read_from_file("../data_learned_hidden/diff_eq_rhs/wAX_"+pad_str(idx_read,4)+".txt");
+	rhs_bX->read_from_file("../data_learned_hidden/diff_eq_rhs/bX_"+pad_str(idx_read,4)+".txt");
 
     // ***************
     // MARK: - Go through all IC
     // ***************
     
-	int no_timesteps = 100;
+	int no_timesteps = 200;
 	double dt=0.01;
 
 	// Init structure
