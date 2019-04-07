@@ -11,7 +11,7 @@
 ## Contents
 
 Folders:
-* `hermite`: this generates a simple figure of the Hermite polynomials.
+* [hermite](hermite): this generates a simple figure of the Hermite polynomials.
 * [bimol_train_stoch_sim](bimol_train_stoch_sim): generates training data for the `A+A->0` reaction.
 * [bimol_train](bimol_train): trains the hidden & visible layer models for the `A+A->0` reaction.
 * [bimol_test_stoch_sim](bimol_test_stoch_sim): generates testing data for the `A+A->0` reaction.
