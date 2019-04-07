@@ -79,9 +79,9 @@ int main() {
 	cout << "--- Making RHS diff eq ---" << endl;
 
 	// Domain
-    double spacing_hA = 0.6;
+    double spacing_hA = 0.5;
     double spacing_wAX = 0.5;
-    double spacing_bX = 0.07;
+    double spacing_bX = 0.05;
     double center = 0.0;
 	Domain1D* domain_1d_hA = new Domain1D(ixn_hA,spacing_hA,center);
 	Domain1D* domain_1d_wAX = new Domain1D(ixn_wAX,spacing_wAX,center);
@@ -194,8 +194,9 @@ int main() {
     
     // Options wake sleep
     OptionsWakeSleep_RBM_CD options_wake_sleep;
-
-    // Dir to write to
+    options_wake_sleep.verbose_timing = false;
+    
+// Dir to write to
     std::string dir_write = "../data_learned_hidden";
     
     // No timesteps for ixn params
@@ -206,7 +207,7 @@ int main() {
     
     // No timesteps
     int timepoint_start_latt = 0;
-    int no_timesteps_latt = 10;
+    int no_timesteps_latt = 5;
     latt->set_no_timesteps(timepoint_start_latt, no_timesteps_latt);
     
     // ***************
@@ -250,14 +251,14 @@ int main() {
     // ***************
 
     int timepoint_start_solve_ixn_params = 0;
-    int no_timesteps_solve_ixns_params = 10;
+    int no_timesteps_solve_ixns_params = 5;
     
 	for (auto opt_step=1; opt_step<=no_opt_steps; opt_step++) {
 
         // Slide window
-        if (opt_step % 5 == 1 && opt_step != 1) {
-            timepoint_start_latt += 5;
-            no_timesteps_solve_ixns_params += 5;
+        if (opt_step % 2 == 1 && opt_step != 1) {
+            timepoint_start_latt += 1;
+            no_timesteps_solve_ixns_params += 1;
             latt->set_no_timesteps(timepoint_start_latt, no_timesteps_latt);
 		};
         
@@ -284,7 +285,6 @@ int main() {
 				opt.wake_sleep_loop(0,no_timesteps,batch_size,no_cd_steps,fnames_map[IC],false);
 			};
              */
-
 			// Write moments
             ixn_hA->write_moment_traj_to_file(timepoint_start_latt, no_timesteps_latt, dir_write+"/moments/"+ixn_hA->get_name()+"_"+pad_str(IC,3)+"_"+pad_str(opt_step,4)+".txt");
             ixn_wAX->write_moment_traj_to_file(timepoint_start_latt, no_timesteps_latt, dir_write+"/moments/"+ixn_wAX->get_name()+"_"+pad_str(IC,3)+"_"+pad_str(opt_step,4)+".txt");

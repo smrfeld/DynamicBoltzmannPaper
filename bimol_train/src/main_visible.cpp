@@ -77,7 +77,7 @@ int main() {
 	cout << "--- Making RHS diff eq ---" << endl;
 
 	// Domain
-    double spacing = 0.25; // 0.4
+    double spacing = 0.5; // 0.4
     double center = 0.0;
 	Domain1D* domain_1d_hA = new Domain1D(ixn_hA,spacing,center);
 	Domain1D* domain_1d_jAA = new Domain1D(ixn_jAA,spacing,center);
@@ -175,6 +175,7 @@ int main() {
 
     // Options wake sleep
     OptionsWakeSleep_1DFV_CD options_wake_sleep;
+	options_wake_sleep.verbose_timing = false;
 
     // Dir to write to
     std::string dir_write = "../data_learned_visible";
@@ -271,8 +272,7 @@ int main() {
             ixn_hA->write_val_traj_to_file(timepoint_start_latt, no_timesteps_latt, dir_write+"/ixn_params/"+ixn_hA->get_name()+"_"+pad_str(IC,3)+"_"+pad_str(opt_step,4)+".txt");
             ixn_jAA->write_val_traj_to_file(timepoint_start_latt, no_timesteps_latt, dir_write+"/ixn_params/"+ixn_jAA->get_name()+"_"+pad_str(IC,3)+"_"+pad_str(opt_step,4)+".txt");
             ixn_kAAA->write_val_traj_to_file(timepoint_start_latt, no_timesteps_latt, dir_write+"/ixn_params/"+ixn_kAAA->get_name()+"_"+pad_str(IC,3)+"_"+pad_str(opt_step,4)+".txt");
-             */
-            
+            */
 			// Write adjoint
 			/*
 			ixn_hA->get_adjoint()->write_to_file("data_learned_visible/adjoint/"+ixn_hA->get_name()+"_"+pad_str(opt_step,4)+".txt");
