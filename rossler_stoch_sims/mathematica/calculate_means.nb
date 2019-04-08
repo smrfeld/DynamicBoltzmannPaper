@@ -1,0 +1,181 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6453,        173]
+NotebookOptionsPosition[      5831,        154]
+NotebookOutlinePosition[      6187,        170]
+CellTagsIndexPosition[      6144,        167]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Calculate means", "Title",ExpressionUUID->"b7141314-d340-49f9-9bb3-a4e93074b459"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"read", "[", "timepoint_", "]"}], ":=", 
+   RowBox[{"Module", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "icStart", ",", "icEnd", ",", "countA", ",", "countB", ",", "countC"}], 
+      "}"}], "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"SetDirectory", "[", 
+       RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"icStart", "=", "1"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"icEnd", "=", "100"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"countA", "=", "0.0"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"countB", "=", "0.0"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"countC", "=", "0.0"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Do", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"countA", "+=", 
+          RowBox[{
+           RowBox[{"Import", "[", 
+            RowBox[{
+             RowBox[{"\"\<../data/lattice_v\>\"", "<>", 
+              RowBox[{"IntegerString", "[", 
+               RowBox[{"ic", ",", "10", ",", "3"}], "]"}], "<>", 
+              "\"\</counts/A.txt\>\""}], ",", "\"\<Table\>\""}], "]"}], "[", 
+           RowBox[{"[", 
+            RowBox[{
+             RowBox[{"timepoint", "+", "1"}], ",", "2"}], "]"}], "]"}]}], ";",
+          "\[IndentingNewLine]", 
+         RowBox[{"countB", "+=", 
+          RowBox[{
+           RowBox[{"Import", "[", 
+            RowBox[{
+             RowBox[{"\"\<../data/lattice_v\>\"", "<>", 
+              RowBox[{"IntegerString", "[", 
+               RowBox[{"ic", ",", "10", ",", "3"}], "]"}], "<>", 
+              "\"\</counts/B.txt\>\""}], ",", "\"\<Table\>\""}], "]"}], "[", 
+           RowBox[{"[", 
+            RowBox[{
+             RowBox[{"timepoint", "+", "1"}], ",", "2"}], "]"}], "]"}]}], ";",
+          "\[IndentingNewLine]", 
+         RowBox[{"countC", "+=", 
+          RowBox[{
+           RowBox[{"Import", "[", 
+            RowBox[{
+             RowBox[{"\"\<../data/lattice_v\>\"", "<>", 
+              RowBox[{"IntegerString", "[", 
+               RowBox[{"ic", ",", "10", ",", "3"}], "]"}], "<>", 
+              "\"\</counts/C.txt\>\""}], ",", "\"\<Table\>\""}], "]"}], "[", 
+           RowBox[{"[", 
+            RowBox[{
+             RowBox[{"timepoint", "+", "1"}], ",", "2"}], "]"}], "]"}]}], 
+         ";"}], "\[IndentingNewLine]", ",", 
+        RowBox[{"{", 
+         RowBox[{"ic", ",", "icStart", ",", "icEnd"}], "}"}]}], "]"}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"countA", "/=", 
+       RowBox[{"icEnd", "-", "icStart", "+", "1"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"countB", "/=", 
+       RowBox[{"icEnd", "-", "icStart", "+", "1"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"countC", "/=", 
+       RowBox[{"icEnd", "-", "icStart", "+", "1"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Return", "[", 
+       RowBox[{"{", 
+        RowBox[{"countA", ",", "countB", ",", "countC"}], "}"}], "]"}], 
+      ";"}]}], "\[IndentingNewLine]", "]"}]}], ";"}]], "Input",ExpressionUUID-\
+>"707411d0-e8c1-4f44-850a-44ac9e5baa44"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"write", "[", 
+    RowBox[{"timepoint_", ",", "counts_"}], "]"}], ":=", 
+   RowBox[{"Module", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", "file", "}"}], "\[IndentingNewLine]", ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"file", "=", 
+       RowBox[{"OpenWrite", "[", 
+        RowBox[{"\"\<../means/\>\"", "<>", 
+         RowBox[{"IntegerString", "[", 
+          RowBox[{"timepoint", ",", "10", ",", "4"}], "]"}], "<>", 
+         "\"\<.txt\>\""}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"WriteString", "[", 
+       RowBox[{"file", ",", 
+        RowBox[{"\"\<A \>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"counts", "[", 
+           RowBox[{"[", "1", "]"}], "]"}], "]"}], "<>", "\"\<\\n\>\""}]}], 
+       "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"WriteString", "[", 
+       RowBox[{"file", ",", 
+        RowBox[{"\"\<B \>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"counts", "[", 
+           RowBox[{"[", "2", "]"}], "]"}], "]"}], "<>", "\"\<\\n\>\""}]}], 
+       "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"WriteString", "[", 
+       RowBox[{"file", ",", 
+        RowBox[{"\"\<C \>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"counts", "[", 
+           RowBox[{"[", "3", "]"}], "]"}], "]"}], "<>", "\"\<\\n\>\""}]}], 
+       "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Close", "[", "file", "]"}], ";"}]}], "\[IndentingNewLine]", 
+    "]"}]}], ";"}]], "Input",ExpressionUUID->"518f35a3-332a-4ba5-85ac-\
+6fea6790aff3"],
+
+Cell[BoxData[
+ RowBox[{"Do", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"write", "[", 
+    RowBox[{"t", ",", 
+     RowBox[{"read", "[", "t", "]"}]}], "]"}], "\[IndentingNewLine]", ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "127", ",", "300", ",", "1"}], "}"}]}], "]"}]], "Input",\
+
+ CellLabel->
+  "In[1525]:=",ExpressionUUID->"cb31fd4b-fe10-420b-ae2f-68479ce486ef"]
+}, Open  ]]
+},
+WindowSize->{808, 911},
+WindowMargins->{{Automatic, 641}, {130, Automatic}},
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 87, 0, 98, "Title",ExpressionUUID->"b7141314-d340-49f9-9bb3-a4e93074b459"],
+Cell[670, 24, 3169, 74, 472, "Input",ExpressionUUID->"707411d0-e8c1-4f44-850a-44ac9e5baa44"],
+Cell[3842, 100, 1595, 39, 199, "Input",ExpressionUUID->"518f35a3-332a-4ba5-85ac-6fea6790aff3"],
+Cell[5440, 141, 375, 10, 73, "Input",ExpressionUUID->"cb31fd4b-fe10-420b-ae2f-68479ce486ef"]
+}, Open  ]]
+}
+]
+*)
+
