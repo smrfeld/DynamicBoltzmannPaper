@@ -1,0 +1,243 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8768,        235]
+NotebookOptionsPosition[      8270,        219]
+NotebookOutlinePosition[      8625,        235]
+CellTagsIndexPosition[      8582,        232]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"read", "[", "timepoint_", "]"}], ":=", 
+   RowBox[{"Module", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "dir", ",", "datahA", ",", "datahB", ",", "datahC", ",", "databX1", ",",
+        "databY1", ",", "databZ1", ",", "window", ",", "means"}], "}"}], 
+     "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"SetDirectory", "[", 
+       RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"dir", "=", 
+       RowBox[{"\"\<../data/fine_tune_1layers/\>\"", "<>", 
+        RowBox[{"IntegerString", "[", 
+         RowBox[{"timepoint", ",", "10", ",", "4"}], "]"}], "<>", 
+        "\"\</moments/\>\""}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"datahA", "=", 
+       RowBox[{
+        RowBox[{"Transpose", "[", 
+         RowBox[{"Import", "[", 
+          RowBox[{
+           RowBox[{"dir", "<>", "\"\<hA.txt\>\""}], ",", "\"\<Table\>\""}], 
+          "]"}], "]"}], "[", 
+        RowBox[{"[", "2", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"datahB", "=", 
+       RowBox[{
+        RowBox[{"Transpose", "[", 
+         RowBox[{"Import", "[", 
+          RowBox[{
+           RowBox[{"dir", "<>", "\"\<hB.txt\>\""}], ",", "\"\<Table\>\""}], 
+          "]"}], "]"}], "[", 
+        RowBox[{"[", "2", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"datahC", "=", 
+       RowBox[{
+        RowBox[{"Transpose", "[", 
+         RowBox[{"Import", "[", 
+          RowBox[{
+           RowBox[{"dir", "<>", "\"\<hC.txt\>\""}], ",", "\"\<Table\>\""}], 
+          "]"}], "]"}], "[", 
+        RowBox[{"[", "2", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"databX1", "=", 
+       RowBox[{
+        RowBox[{"Transpose", "[", 
+         RowBox[{"Import", "[", 
+          RowBox[{
+           RowBox[{"dir", "<>", "\"\<bX1.txt\>\""}], ",", "\"\<Table\>\""}], 
+          "]"}], "]"}], "[", 
+        RowBox[{"[", "2", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"databY1", "=", 
+       RowBox[{
+        RowBox[{"Transpose", "[", 
+         RowBox[{"Import", "[", 
+          RowBox[{
+           RowBox[{"dir", "<>", "\"\<bY1.txt\>\""}], ",", "\"\<Table\>\""}], 
+          "]"}], "]"}], "[", 
+        RowBox[{"[", "2", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"databZ1", "=", 
+       RowBox[{
+        RowBox[{"Transpose", "[", 
+         RowBox[{"Import", "[", 
+          RowBox[{
+           RowBox[{"dir", "<>", "\"\<bZ1.txt\>\""}], ",", "\"\<Table\>\""}], 
+          "]"}], "]"}], "[", 
+        RowBox[{"[", "2", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"window", "=", "50"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"means", "=", 
+       RowBox[{"Association", "[", "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"means", "[", "\"\<A\>\"", "]"}], "=", 
+       RowBox[{
+        RowBox[{"Mean", "[", 
+         RowBox[{"datahA", "[", 
+          RowBox[{"[", 
+           RowBox[{
+            RowBox[{"-", "50"}], ";;"}], "]"}], "]"}], "]"}], "/", 
+        "1000.0"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"means", "[", "\"\<B\>\"", "]"}], "=", 
+       RowBox[{
+        RowBox[{"Mean", "[", 
+         RowBox[{"datahB", "[", 
+          RowBox[{"[", 
+           RowBox[{
+            RowBox[{"-", "50"}], ";;"}], "]"}], "]"}], "]"}], "/", 
+        "1000.0"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"means", "[", "\"\<C\>\"", "]"}], "=", 
+       RowBox[{
+        RowBox[{"Mean", "[", 
+         RowBox[{"datahC", "[", 
+          RowBox[{"[", 
+           RowBox[{
+            RowBox[{"-", "50"}], ";;"}], "]"}], "]"}], "]"}], "/", 
+        "1000.0"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"means", "[", "\"\<X1\>\"", "]"}], "=", 
+       RowBox[{
+        RowBox[{"Mean", "[", 
+         RowBox[{"databX1", "[", 
+          RowBox[{"[", 
+           RowBox[{
+            RowBox[{"-", "50"}], ";;"}], "]"}], "]"}], "]"}], "/", 
+        "1000.0"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"means", "[", "\"\<Y1\>\"", "]"}], "=", 
+       RowBox[{
+        RowBox[{"Mean", "[", 
+         RowBox[{"databY1", "[", 
+          RowBox[{"[", 
+           RowBox[{
+            RowBox[{"-", "50"}], ";;"}], "]"}], "]"}], "]"}], "/", 
+        "1000.0"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"means", "[", "\"\<Z1\>\"", "]"}], "=", 
+       RowBox[{
+        RowBox[{"Mean", "[", 
+         RowBox[{"databZ1", "[", 
+          RowBox[{"[", 
+           RowBox[{
+            RowBox[{"-", "50"}], ";;"}], "]"}], "]"}], "]"}], "/", 
+        "1000.0"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Return", "[", "means", "]"}], ";"}]}], "\[IndentingNewLine]", 
+    "]"}]}], ";"}]], "Input",
+ CellLabel->
+  "In[1526]:=",ExpressionUUID->"707411d0-e8c1-4f44-850a-44ac9e5baa44"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"write", "[", 
+    RowBox[{"timepoint_", ",", "means_"}], "]"}], ":=", 
+   RowBox[{"Module", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", "file", "}"}], "\[IndentingNewLine]", ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"file", "=", 
+       RowBox[{"OpenWrite", "[", 
+        RowBox[{"dir", "=", 
+         RowBox[{"\"\<../data/fine_tune_1layers/\>\"", "<>", 
+          RowBox[{"IntegerString", "[", 
+           RowBox[{"timepoint", ",", "10", ",", "4"}], "]"}], "<>", 
+          "\"\</init_center.txt\>\""}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"WriteString", "[", 
+       RowBox[{"file", ",", 
+        RowBox[{"\"\<0 A \>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"means", "[", "\"\<A\>\"", "]"}], "]"}], "<>", 
+         "\"\<\\n\>\""}]}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"WriteString", "[", 
+       RowBox[{"file", ",", 
+        RowBox[{"\"\<0 B \>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"means", "[", "\"\<B\>\"", "]"}], "]"}], "<>", 
+         "\"\<\\n\>\""}]}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"WriteString", "[", 
+       RowBox[{"file", ",", 
+        RowBox[{"\"\<0 C \>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"means", "[", "\"\<C\>\"", "]"}], "]"}], "<>", 
+         "\"\<\\n\>\""}]}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"WriteString", "[", 
+       RowBox[{"file", ",", 
+        RowBox[{"\"\<1 X1 \>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"means", "[", "\"\<X1\>\"", "]"}], "]"}], "<>", 
+         "\"\<\\n\>\""}]}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"WriteString", "[", 
+       RowBox[{"file", ",", 
+        RowBox[{"\"\<1 Y1 \>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"means", "[", "\"\<Y1\>\"", "]"}], "]"}], "<>", 
+         "\"\<\\n\>\""}]}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"WriteString", "[", 
+       RowBox[{"file", ",", 
+        RowBox[{"\"\<1 Z1 \>\"", "<>", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"means", "[", "\"\<Z1\>\"", "]"}], "]"}], "<>", 
+         "\"\<\\n\>\""}]}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Close", "[", "file", "]"}], ";"}]}], "\[IndentingNewLine]", 
+    "]"}]}], ";"}]], "Input",
+ CellLabel->
+  "In[1714]:=",ExpressionUUID->"518f35a3-332a-4ba5-85ac-6fea6790aff3"],
+
+Cell[BoxData[
+ RowBox[{"Do", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"write", "[", 
+    RowBox[{"t", ",", 
+     RowBox[{"read", "[", "t", "]"}]}], "]"}], "\[IndentingNewLine]", ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", "90", ",", "10"}], "}"}]}], "]"}]], "Input",
+ CellLabel->
+  "In[1715]:=",ExpressionUUID->"cb31fd4b-fe10-420b-ae2f-68479ce486ef"]
+},
+WindowSize->{808, 911},
+WindowMargins->{{Automatic, 487}, {Automatic, 46}},
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 4899, 128, 451, "Input",ExpressionUUID->"707411d0-e8c1-4f44-850a-44ac9e5baa44"],
+Cell[5460, 150, 2432, 56, 304, "Input",ExpressionUUID->"518f35a3-332a-4ba5-85ac-6fea6790aff3"],
+Cell[7895, 208, 371, 9, 73, "Input",ExpressionUUID->"cb31fd4b-fe10-420b-ae2f-68479ce486ef"]
+}
+]
+*)
+
