@@ -1,0 +1,151 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5192,        143]
+NotebookOptionsPosition[      4538,        122]
+NotebookOutlinePosition[      4894,        138]
+CellTagsIndexPosition[      4851,        135]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Mean", "Title",
+ CellChangeTimes->{{3.7586474060047398`*^9, 
+  3.758647406257476*^9}},ExpressionUUID->"3004c4a8-a96e-485c-b649-\
+417cac4ee230"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"getMeans", "[", "iLatt_", "]"}], ":=", 
+   RowBox[{"Module", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"countsA", ",", "countsB", ",", "countsC"}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"SetDirectory", "[", 
+       RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"countsA", "=", 
+       RowBox[{"Import", "[", 
+        RowBox[{
+         RowBox[{"\"\<../data/lattice_v\>\"", "<>", 
+          RowBox[{"IntegerString", "[", 
+           RowBox[{"iLatt", ",", "10", ",", "3"}], "]"}], "<>", 
+          "\"\</counts/A.txt\>\""}], ",", "\"\<Table\>\""}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"countsB", "=", 
+       RowBox[{"Import", "[", 
+        RowBox[{
+         RowBox[{"\"\<../data/lattice_v\>\"", "<>", 
+          RowBox[{"IntegerString", "[", 
+           RowBox[{"iLatt", ",", "10", ",", "3"}], "]"}], "<>", 
+          "\"\</counts/B.txt\>\""}], ",", "\"\<Table\>\""}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"countsC", "=", 
+       RowBox[{"Import", "[", 
+        RowBox[{
+         RowBox[{"\"\<../data/lattice_v\>\"", "<>", 
+          RowBox[{"IntegerString", "[", 
+           RowBox[{"iLatt", ",", "10", ",", "3"}], "]"}], "<>", 
+          "\"\</counts/C.txt\>\""}], ",", "\"\<Table\>\""}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Return", "[", 
+       RowBox[{"ListLinePlot", "[", 
+        RowBox[{"{", 
+         RowBox[{"countsA", ",", "countsB", ",", "countsC"}], "}"}], "]"}], 
+       "]"}]}]}], "\[IndentingNewLine]", "]"}]}], ";"}]], "Input",
+ CellLabel->
+  "In[469]:=",ExpressionUUID->"9cb904bb-9966-44eb-8ae3-5e9ef84ee0f8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"getMeans", "[", "iLatt", "]"}], "\[IndentingNewLine]", ",", 
+   RowBox[{"{", 
+    RowBox[{"iLatt", ",", "1", ",", "100", ",", "1"}], "}"}]}], 
+  "]"}]], "Input",
+ CellLabel->
+  "In[471]:=",ExpressionUUID->"af4a3f82-d1ae-4de4-b231-9f31f9d89972"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`iLatt$$ = 93, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`iLatt$$], 1, 100, 1}}, Typeset`size$$ = {
+    400., {120., 125.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`iLatt$106958$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`iLatt$$ = 1}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`iLatt$$, $CellContext`iLatt$106958$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, 
+      "Body" :> $CellContext`getMeans[$CellContext`iLatt$$], 
+      "Specifications" :> {{$CellContext`iLatt$$, 1, 100, 1}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{445., {179., 185.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->
+  "Out[471]=",ExpressionUUID->"a3dc3cc8-c710-45d2-8861-cd506de6d24f"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 755},
+WindowMargins->{{Automatic, 567}, {127, Automatic}},
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 149, 3, 98, "Title",ExpressionUUID->"3004c4a8-a96e-485c-b649-417cac4ee230"],
+Cell[732, 27, 1758, 43, 241, "Input",ExpressionUUID->"9cb904bb-9966-44eb-8ae3-5e9ef84ee0f8"],
+Cell[CellGroupData[{
+Cell[2515, 74, 333, 8, 73, "Input",ExpressionUUID->"af4a3f82-d1ae-4de4-b231-9f31f9d89972"],
+Cell[2851, 84, 1659, 34, 383, "Output",ExpressionUUID->"a3dc3cc8-c710-45d2-8861-cd506de6d24f"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
