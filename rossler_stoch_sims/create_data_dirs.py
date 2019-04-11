@@ -6,7 +6,7 @@ if not os.path.exists(parent):
 	os.makedirs(parent)
 
 # No samples
-nSamples = 300
+nSamples = 100
 
 for i in range(1,nSamples+1):
 	dir_name = parent + "/lattice_v%03d" % (i)

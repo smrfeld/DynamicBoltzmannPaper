@@ -54,8 +54,8 @@ int main() {
 	double dt = 0.01;
 
 	// Number of steps to run
-	int n_steps = 100;
-	// int n_steps = 250;
+	// int n_steps = 100;
+	int n_steps = 250;
 
 	// Reaction probs
 	double m = 0.4;
@@ -72,6 +72,11 @@ int main() {
 	int write_step = 1;
 
 	// 200 particles ~ log (0.2/(1-3*0.2)) = - log(2)
+	std::map<std::string,int> pops;
+	pops["A"] = 200;
+	pops["B"] = 200;
+	pops["C"] = 200;
+	/*
 	std::map<std::string,double> hdict;
 	hdict["A"] = -0.69;
 	hdict["B"] = -0.69;
@@ -83,13 +88,15 @@ int main() {
 	jdict["B"]["B"] = 0;
 	jdict["B"]["C"] = 0;
 	jdict["C"]["C"] = 0;
+	*/
 
 	// Number of samples to run
-	int i_start = 1;
+	int i_start = 60;
 	int i_end = 100; // inclusive
+	std::vector<int> versions({95});
 
-	for (int write_version_no=i_start; write_version_no<=i_end; write_version_no++)
-	{
+	for (auto write_version_no: versions) {
+	// for (int write_version_no=i_start; write_version_no<=i_end; write_version_no++) {
 
 		std::cout << "------ " << write_version_no << " -------" << std::endl;
 
@@ -136,7 +143,8 @@ int main() {
 		Populate the lattice
 		********************/
 
-		sim.populate_lattice(hdict,jdict,n_annealing);
+		sim.populate_lattice(pops);
+		// sim.populate_lattice(hdict,jdict,10);
 		// sim.read_lattice("../data/lattice_v"+pad_str(write_version_no,3)+"/lattice/0000.txt");
 
 		/********************
