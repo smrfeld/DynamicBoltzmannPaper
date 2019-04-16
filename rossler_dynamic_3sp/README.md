@@ -58,3 +58,4 @@ Paper figures can be generated using the notebooks in the `mathematica` director
 * `diff_eq_rhs` visualizes the learned right hand sides of the differential equations.
 * `sample` visualizes some sampled learned lattices and the hidden layers.
 * `moments` compares the learned moments calculated from the sampled lattices with the moments in the stoch sims in `rossler_stoch_sims`.
+* `trajs` compares the learned trajectories to a simple MaxEnt model without weights.
