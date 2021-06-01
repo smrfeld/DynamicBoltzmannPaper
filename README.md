@@ -1,4 +1,4 @@
-# Code used in the paper
+# Code used in: Learning moment closure in reaction-diffusion systems with spatial dynamic Boltzmann distributions
 
 * [Phys. Rev. E 99, 063315](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.99.063315)
 * [arXiv:1808.08630](https://arxiv.org/abs/1808.08630)
