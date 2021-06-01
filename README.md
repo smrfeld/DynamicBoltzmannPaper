@@ -5,8 +5,11 @@
 
 ## Requirements / libraries used
 
-* [Dynamic Boltzmann library](https://github.com/smrfeld/DynamicBoltzmann), specifically v3.0 [here](https://github.com/smrfeld/DynamicBoltzmann/releases/tag/3.0).
-	* This further requires:
+Dependenices are handled using the [CPM.cmake](https://github.com/cpm-cmake/CPM.cmake) manager. **There is no need to download and install any libraries manually, simply proceed to the contents below.**
+
+For reference, the libraries downloaded by the package manager are:
+* [Dynamic Boltzmann library](https://github.com/smrfeld/DynamicBoltzmann), specifically v3.1 [here](https://github.com/smrfeld/DynamicBoltzmann/releases/tag/3.1).
+	* This further requires (also automatically managed):
 	* [Q3C1 library](https://github.com/smrfeld/Q3-C1-Finite-Elements), specifically v2.0 [here](https://github.com/smrfeld/Q3-C1-Finite-Elements/releases/tag/2.0).
 	* [Armadillo](http://arma.sourceforge.net), specifically v9.300.2 [here](http://arma.sourceforge.net/download.html).
 * [LatticeGillespie library](https://github.com/smrfeld/LatticeGillespieCpp) for stochastic simulations, specifically v1.0 [here](https://github.com/smrfeld/LatticeGillespieCpp/releases/tag/1.0).
