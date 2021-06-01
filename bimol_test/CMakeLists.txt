@@ -12,8 +12,18 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../bin)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_BINARY_DIR}/../bin)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_BINARY_DIR}/../bin)
 
-find_library(DBLZ_LIB dblz HINTS /usr/local/lib/)
-find_library(Q3C1_LIB q3c1 HINTS /usr/local/lib/)
+# Dependencies
+include(cmake/CPM.cmake)
+CPMFindPackage(
+    GITHUB_REPOSITORY "smrfeld/Q3-C1-Finite-Elements"
+    NAME q3c1
+    GIT_TAG 2.0
+    )
+CPMFindPackage(
+    GITHUB_REPOSITORY "smrfeld/DynamicBoltzmann"
+    NAME dblz
+    GIT_TAG 3.1
+    )
 
 ############################################################
 # sample_hidden
@@ -21,8 +31,12 @@ find_library(Q3C1_LIB q3c1 HINTS /usr/local/lib/)
 
 add_executable(sample_hidden src/sample_hidden.cpp)
 
-target_link_libraries(sample_hidden PUBLIC ${DBLZ_LIB})
-target_link_libraries(sample_hidden PUBLIC ${Q3C1_LIB})
+# Include dirs for dblz, q3c1
+target_include_directories(sample_hidden PRIVATE ${dblz_SOURCE_DIR}/include/)
+target_include_directories(sample_hidden PRIVATE ${q3c1_SOURCE_DIR}/include/)
+
+target_link_libraries(sample_hidden PUBLIC dblz)
+target_link_libraries(sample_hidden PUBLIC q3c1)
 
 ############################################################
 # sample_visible
@@ -30,8 +44,12 @@ target_link_libraries(sample_hidden PUBLIC ${Q3C1_LIB})
 
 add_executable(sample_visible src/sample_visible.cpp)
 
-target_link_libraries(sample_visible PUBLIC ${DBLZ_LIB})
-target_link_libraries(sample_visible PUBLIC ${Q3C1_LIB})
+# Include dirs for dblz, q3c1
+target_include_directories(sample_visible PRIVATE ${dblz_SOURCE_DIR}/include/)
+target_include_directories(sample_visible PRIVATE ${q3c1_SOURCE_DIR}/include/)
+
+target_link_libraries(sample_visible PUBLIC dblz)
+target_link_libraries(sample_visible PUBLIC q3c1)
 
 ############################################################
 # learned_trajs_hidden
@@ -39,8 +57,12 @@ target_link_libraries(sample_visible PUBLIC ${Q3C1_LIB})
 
 add_executable(learned_trajs_hidden src/learned_trajs_hidden.cpp)
 
-target_link_libraries(learned_trajs_hidden PUBLIC ${DBLZ_LIB})
-target_link_libraries(learned_trajs_hidden PUBLIC ${Q3C1_LIB})
+# Include dirs for dblz, q3c1
+target_include_directories(learned_trajs_hidden PRIVATE ${dblz_SOURCE_DIR}/include/)
+target_include_directories(learned_trajs_hidden PRIVATE ${q3c1_SOURCE_DIR}/include/)
+
+target_link_libraries(learned_trajs_hidden PUBLIC dblz)
+target_link_libraries(learned_trajs_hidden PUBLIC q3c1)
 
 ############################################################
 # learned_trajs_visible
@@ -48,8 +70,12 @@ target_link_libraries(learned_trajs_hidden PUBLIC ${Q3C1_LIB})
 
 add_executable(learned_trajs_visible src/learned_trajs_visible)
 
-target_link_libraries(learned_trajs_visible PUBLIC ${DBLZ_LIB})
-target_link_libraries(learned_trajs_visible PUBLIC ${Q3C1_LIB})
+# Include dirs for dblz, q3c1
+target_include_directories(learned_trajs_visible PRIVATE ${dblz_SOURCE_DIR}/include/)
+target_include_directories(learned_trajs_visible PRIVATE ${q3c1_SOURCE_DIR}/include/)
+
+target_link_libraries(learned_trajs_visible PUBLIC dblz)
+target_link_libraries(learned_trajs_visible PUBLIC q3c1)
 
 ############################################################
 # extra

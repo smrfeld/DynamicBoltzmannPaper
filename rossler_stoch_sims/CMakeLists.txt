@@ -12,8 +12,18 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../bin)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_BINARY_DIR}/../bin)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_BINARY_DIR}/../bin)
 
-find_library(BMLA_LIB bmla HINTS /usr/local/lib/)
-find_library(LATTG_LIB lattgillespie HINTS /usr/local/lib)
+# Dependencies
+include(cmake/CPM.cmake)
+CPMAddPackage(
+    GITHUB_REPOSITORY "smrfeld/LatticeGillespieCpp"
+    NAME lattgillespie
+    GIT_TAG 1.0
+    )
+CPMAddPackage(
+    GITHUB_REPOSITORY "smrfeld/DynamicBoltzmann"
+    NAME bmla
+    GIT_TAG 3.1
+    )
 
 ############################################################
 # main
@@ -21,7 +31,10 @@ find_library(LATTG_LIB lattgillespie HINTS /usr/local/lib)
 
 add_executable(main src/main.cpp)
 
-target_link_libraries(main PUBLIC ${LATTG_LIB})
+# Include dirs for bmla, lattgillespie
+target_include_directories(main PRIVATE ${lattgillespie_SOURCE_DIR}/include/)
+
+target_link_libraries(main PUBLIC lattgillespie)
 
 ############################################################
 # sample_ic
@@ -29,7 +42,10 @@ target_link_libraries(main PUBLIC ${LATTG_LIB})
 
 add_executable(sample_ic src/sample_ic.cpp src/dbm_v1.hpp src/dbm_v2.hpp)
 
-target_link_libraries(sample_ic PUBLIC ${BMLA_LIB})
+# Include dirs for bmla, lattgillespie
+target_include_directories(sample_ic PRIVATE ${bmla_SOURCE_DIR}/include/)
+
+target_link_libraries(sample_ic PUBLIC bmla)
 
 ############################################################
 # extra
